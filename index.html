@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prof. Name — Portfolio</title>
+  <meta name="description" content="Academic portfolio of Prof. Name" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="banner">
+    <img class="banner-img" src="assets/banner.jpeg" alt="">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button id="btn-en" class="pill active">English</button>
+      <button id="btn-ar" class="pill">عربية</button>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="id-row">
+      <img class="avatar" src="assets/profile.jpg" alt="Profile photo">
+      <div class="id-text">
+        <h1 id="name"></h1>
+        <!-- <p id="affiliation" class="muted"></p> -->
+    </div>
+  </div>
+
+  <nav class="tabs" aria-label="Sections">
+  <button data-tab="about" class="active" aria-selected="true" id="tab-about">About</button>
+  <button data-tab="books" id="tab-books">Books</button>
+  <button data-tab="papers" id="tab-papers">Papers</button>
+  <button data-tab="thesis" id="tab-thesis">Thesis</button>
+  <button data-tab="drafts" id="tab-drafts">Drafts</button>
+</nav>
+</header>
+
+<main id="content">
+  <!-- ABOUT is the DEFAULT tab -->
+  <section id="about" class="tab-panel active" aria-label="About">
+    <div class="about-card">
+<!-- <h2 id="about-title">About</h2> -->
+      <p id="bio" class="about-body"></p>
+
+      <div class="about-section">
+<h3 class="about-subtitle" id="subtitle-interests">Interests</h3>
+        <div class="chips" id="interestsChips"></div>
+      </div>
+
+      <div class="about-section">
+<h3 class="about-subtitle" id="subtitle-social">Social Media</h3>
+        <div id="socials" class="socials"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books" class="tab-panel" aria-label="Books"></section>
+  <section id="papers" class="tab-panel" aria-label="Papers"></section>
+  <section id="thesis" class="tab-panel" aria-label="Thesis"></section>
+  <section id="drafts" class="tab-panel" aria-label="Drafts"></section>
+</main>
+
+<footer class="banner-footer">
+  <img class="banner-img" src="assets/banner.jpeg" alt="">
+  <div class="footer-overlay">
+    <div class="footer-inner">
+      <img class="footer-mark" src="assets/logo.png" alt="">
+<p class="footer-tagline" id="footer-tagline"></p>
+      
+
+<div class="footer-cta">
+  <a class="btn solid" href="#papers" id="cta-explore">Explore Publications</a>
+</div>
+
+<ul class="footer-links">
+  <li><a href="#about" id="footer-about">About</a></li>
+  <li><a href="#books" id="footer-books">Books</a></li>
+  <li><a href="#papers" id="footer-papers">Papers</a></li>
+  <li><a href="#thesis" id="footer-thesis">Thesis</a></li>
+  <li><a href="#drafts" id="footer-drafts">Drafts</a></li>
+</ul>
+
+      <p class="footer-note">© <span id="year"></span> Professor Abdullah M. Alhajeri — All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

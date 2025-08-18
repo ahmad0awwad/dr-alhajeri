@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin 2 — Publish Items</title>
+  <style>
+    body { font-family: system-ui; max-width: 900px; margin: 20px auto; padding: 0 16px; }
+    fieldset { margin: 16px 0; }
+    label { display:block; margin-top: 10px; }
+    input[type="text"], input[type="number"], textarea, select { width: 100%; padding: 8px; }
+    textarea { min-height: 120px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .actions { margin-top: 16px; }
+    .ok { color: green; }
+    .err { color: #b00; }
+    .chip { display:inline-block; padding:2px 8px; border:1px solid #ddd; border-radius:999px; margin:2px; font-size:12px;}
+  </style>
+</head>
+<body>
+  <h1>Admin — Add Book/Paper/Thesis/Draft</h1>
+
+  <section id="loginSection">
+    <form id="loginForm">
+      <label>Admin password
+        <input type="password" id="password" required />
+      </label>
+      <button type="submit">Login</button>
+      <span id="loginMsg"></span>
+    </form>
+  </section>
+
+  <section id="formSection" style="display:none;">
+    <form id="itemForm" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Basic</legend>
+        <label>Type
+          <select name="type" id="type" required>
+            <option value="books">Book</option>
+            <option value="papers">Paper</option>
+            <option value="thesis">Thesis</option>
+            <option value="drafts">Draft</option>
+          </select>
+        </label>
+        <label>Title <input type="text" name="title" required /></label>
+        <div class="row">
+          <label>Authors <input type="text" name="authors" placeholder="A. Author, B. Author" /></label>
+          <label>Year <input type="number" name="year" min="1800" max="2100" /></label>
+        </div>
+        <label>Venue/Publisher <input type="text" name="venue" /></label>
+        <label>Abstract <textarea name="abstract" placeholder="Short abstract..."></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Files & Links</legend>
+        <label>PDF (optional) <input type="file" name="pdf" accept="application/pdf" /></label>
+        <label>Cover image (optional) <input type="file" name="thumbnail" accept="image/*" /></label>
+        <div class="row">
+          <label>DOI <input type="text" name="doi" placeholder="https://doi.org/..." /></label>
+          <label>External Link <input type="text" name="link" placeholder="https://..." /></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Related items</legend>
+        <p>Select any related works (books/papers/thesis/drafts).</p>
+        <select multiple id="relatedSelect" size="8"></select>
+        <div id="chosen"></div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit">Publish</button>
+        <span id="msg"></span>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const loginMsg = document.getElementById('loginMsg');
+    const formSection = document.getElementById('formSection');
+    const loginSection = document.getElementById('loginSection');
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      loginMsg.textContent = '';
+      const password = document.getElementById('password').value;
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ password })
+      });
+      if (res.ok) {
+        loginSection.style.display = 'none';
+        formSection.style.display = 'block';
+        await populateRelated();
+      } else {
+        loginMsg.textContent = 'Wrong password';
+        loginMsg.className = 'err';
+      }
+    });
+
+    async function populateRelated() {
+      const sel = document.getElementById('relatedSelect');
+      sel.innerHTML = '';
+      const res = await fetch('/api/items');
+      if (!res.ok) { sel.innerHTML = '<option>Login expired. Refresh.</option>'; return; }
+      const items = await res.json();
+      items.forEach(it => {
+        const opt = document.createElement('option');
+        opt.value = it.id;
+        opt.textContent = `[${it.type}] ${it.title}`;
+        sel.appendChild(opt);
+      });
+      sel.addEventListener('change', () => {
+        const chosen = Array.from(sel.selectedOptions).map(o => o.textContent);
+        const wrap = document.getElementById('chosen');
+        wrap.innerHTML = '';
+        chosen.forEach(t => {
+          const span = document.createElement('span');
+          span.className = 'chip';
+          span.textContent = t;
+          wrap.appendChild(span);
+        });
+      });
+    }
+
+    const itemForm = document.getElementById('itemForm');
+    const msg = document.getElementById('msg');
+    itemForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msg.textContent = '';
+
+      const data = new FormData(itemForm);
+      const rel = Array.from(document.getElementById('relatedSelect').selectedOptions).map(o => o.value);
+      data.set('relatedIds', rel.join(','));
+
+      const res = await fetch('/api/items', { method: 'POST', body: data });
+      if (res.ok) {
+        const j = await res.json();
+        msg.textContent = 'Published ✓';
+        msg.className = 'ok';
+        itemForm.reset();
+        document.getElementById('chosen').innerHTML = '';
+        await populateRelated(); // refresh list with the new item
+      } else {
+        const j = await res.json().catch(()=>({error:'Failed'}));
+        msg.textContent = j.error || 'Error';
+        msg.className = 'err';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+/* ============ tokens ============ */
+:root{
+  --brand-900:#0f3f49; --brand-800:#13515d; --brand-600:#17697a; --brand-300:#45a7ba; --brand-100:#e8f4f7;
+  --ink-900:#0b1220; --ink-700:#243041; --ink-500:#5b6371; --paper:#fff;
+  --radius:14px; --r-sm:10px; --shadow-1:0 6px 24px rgba(15,63,73,.18),0 2px 6px rgba(15,63,73,.08);
+  --shadow-2:0 10px 34px rgba(15,63,73,.22),0 4px 10px rgba(15,63,73,.12);
+  --maxw:1100px; --g:16px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --paper:#0a0f13; --ink-900:#e9eef5; --ink-700:#cfd7e5; --ink-500:#a4afc3;
+         --shadow-1:0 6px 24px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.3);
+         --shadow-2:0 10px 34px rgba(0,0,0,.55),0 4px 10px rgba(0,0,0,.4); }
+}
+
+/* ============ base ============ */
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;color:var(--ink-900);
+     background:radial-gradient(1200px 800px at 10% -10%,var(--brand-100),transparent 60%),linear-gradient(#f8fbfc,#f7fbfd);}
+
+/* helpers */
+.muted{color:var(--ink-500)}
+.pill{border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.2);backdrop-filter:blur(8px);color:#fff;
+      padding:6px 12px;border-radius:999px;cursor:pointer;transition:transform .15s, background .2s}
+.pill:hover{transform:translateY(-1px);background:rgba(255,255,255,.3)}
+.pill.active{background:#fff;color:var(--brand-800)}
+
+/* ============ hero/banner ============ */
+.hero{position:relative;margin:0 0 24px;background:linear-gradient(180deg,var(--brand-900),var(--brand-800));color:#fff;box-shadow:var(--shadow-1)}
+.banner{position:relative;height:220px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.15)}
+.banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.85) contrast(1.05)}
+.lang-switch{position:absolute;inset-inline-start:16px;inset-block-start:14px;display:flex;gap:8px}
+
+.hero-inner{max-width:var(--maxw);margin:0 auto;padding:14px 16px 20px}
+
+/* ID row: mobile-first stack → side-by-side on larger screens */
+.id-row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+@media (min-width:700px){ .id-row{grid-template-columns:120px 1fr;gap:18px} }
+
+.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.85);box-shadow:0 10px 28px rgba(0,0,0,.25);background:#fff}
+@media (min-width:700px){ .avatar{width:120px;height:120px} }
+
+.id-text h1{margin:0 0 6px;font-weight:800;letter-spacing:.2px;font-size:clamp(22px,3.4vw,34px);text-shadow:0 2px 10px rgba(0,0,0,.18)}
+.id-text p{margin:4px 0}
+
+/* chips for interests */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;
+             background:#fff;color:var(--brand-800);border:1px solid rgba(19,81,93,.18);box-shadow:0 1px 2px rgba(0,0,0,.06)}
+@media (prefers-color-scheme:dark){ .chips .chip{background:#10161b;color:#e8f4f7;border-color:#1e2b31} }
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tabs button{appearance:none;border:0;padding:10px 14px;border-radius:999px;cursor:pointer;background:rgba(255,255,255,.12);
+             color:#fff;letter-spacing:.2px;transition:transform .15s, background .2s, box-shadow .2s}
+.tabs button:hover{transform:translateY(-1px);background:rgba(255,255,255,.18)}
+.tabs button.active{background:#fff;color:var(--brand-800);box-shadow:0 6px 18px rgba(0,0,0,.15)}
+
+/* main/cards */
+#content{max-width:var(--maxw);margin:0 auto 40px;padding:0 16px}
+.tab-panel{display:none}
+.tab-panel.active{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+/* Make ABOUT tab full width instead of grid */
+#about.tab-panel.active {
+  display: block;      /* 👈 not grid */
+}
+
+#about .about-card {
+  max-width: 900px;    /* optional, keeps text readable */
+  margin: 0 auto;      /* center it */
+}
+
+.card{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:14px;background:var(--paper);
+      border:1px solid rgba(19,81,93,.10);border-radius:var(--radius);box-shadow:var(--shadow-1);
+      transition:transform .18s, box-shadow .18s, border-color .2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2);border-color:rgba(19,81,93,.22)}
+.thumb{width:72px;height:72px;border-radius:10px;object-fit:cover;background:#f3f6f7;border:1px solid rgba(19,81,93,.12)}
+.item-title{margin:0 0 4px;font-size:17px;line-height:1.35;color:var(--ink-900)}
+.meta{margin:0 0 8px;color:var(--ink-500);font-size:13px}
+.links a{font-size:13px;text-decoration:none;margin-inline-end:12px;color:var(--brand-600);border-bottom:1px solid rgba(29,127,147,.25)}
+.links a:hover{color:var(--brand-800);border-color:currentColor}
+
+/* RTL */
+html.rtl body{direction:rtl}
+html.rtl .lang-switch{inset-inline-end:16px;inset-inline-start:auto}
+html.rtl .links a{margin-inline-start:12px;margin-inline-end:0}
+html.rtl .card{grid-template-columns:1fr 72px}
+html.rtl .thumb{order:2}
+
+/* reduce motion */
+@media (prefers-reduced-motion:reduce){ .pill,.tabs button,.card,.socials a{transition:none} }
+/* --- ID row (avatar next to name) --- */
+.id-row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+@media (min-width:700px){ .id-row{grid-template-columns:120px 1fr;gap:18px} }
+
+/* --- About card that contains bio + interests + socials --- */
+.about-card{
+  margin-top:10px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+.about-card h2{
+  margin:0 0 8px; font-size:18px; letter-spacing:.2px; color:#fff;
+  display:flex; align-items:baseline; gap:8px;
+}
+.about-card .divider{opacity:.6}
+.about-card .ar{opacity:.85}
+.about-body{margin:0; color:#fff}
+
+.about-section{margin-top:10px}
+.about-subtitle{margin:0 0 6px; font-size:14px; color:#e9f3f6; opacity:.9}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .chip{
+  display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;
+  background:#fff;color:var(--brand-800);
+  border:1px solid rgba(19,81,93,.18); box-shadow:0 1px 2px rgba(0,0,0,.06)
+}
+@media (prefers-color-scheme:dark){
+  .chips .chip{background:#10161b;color:#e8f4f7;border-color:#1e2b31}
+}
+
+
+/* --- Footer using the same banner --- */
+.banner-footer{
+  position:relative; overflow:hidden; color:#fff; margin-top:40px;
+  background:linear-gradient(180deg,var(--brand-900),var(--brand-800));
+}
+.banner-footer .banner-img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  filter:saturate(.9) brightness(.85) contrast(1.05);
+  opacity:.9;
+}
+.footer-overlay{
+  position:relative;
+  background: linear-gradient(180deg, rgba(15,63,73,.65), rgba(19,81,93,.8));
+}
+.footer-inner{
+  max-width:var(--maxw); margin:0 auto; padding:28px 16px 34px; text-align:center;
+}
+.footer-mark{
+  width:90px; height:auto; margin:0 auto 12px; filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));
+}
+.footer-tagline{
+  margin:0 auto 14px; max-width:860px; font-size:17px; line-height:1.6;
+  text-wrap:balance;
+}
+.footer-cta{display:flex;gap:10px;justify-content:center;margin:14px 0 10px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;text-decoration:none;
+  transition:transform .15s, box-shadow .2s, background .2s, color .2s
+}
+.btn.ghost{color:#fff;border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.15)}
+.btn.ghost:hover{transform:translateY(-1px);background:rgba(255,255,255,.25)}
+.btn.solid{background:#fff;color:var(--brand-800)}
+.btn.solid:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+
+.footer-links{
+  list-style:none;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:10px 0 6px;padding:0
+}
+.footer-links a{color:#fff;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,.4)}
+.footer-links a:hover{border-bottom-style:solid}
+.footer-note{margin:6px 0 0; opacity:.9}
+
+/* RTL tweaks */
+html.rtl .about-card h2{flex-direction:row-reverse}
+html.rtl .footer-links{direction:rtl}
+/* ABOUT TAB */
+.about-card {
+  background: var(--paper);
+  color: var(--ink-900);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-1);
+  margin-top: 18px;
+}
+.about-card h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brand-800);
+  display: flex; 
+  gap: 8px;
+  align-items: baseline;
+}
+.about-body {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-700);
+}
+.about-subtitle {
+  margin: 12px 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-600);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+/* Interests as Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  background: var(--brand-100);
+  color: var(--brand-800);
+  border: 1px solid rgba(19,81,93,.18);
+  transition: background .2s;
+}
+.chip:hover { background: var(--brand-300); color: #fff; }
+
+/* Footer Links with Icons */
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin: 18px 0 10px;
+  padding: 0;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+.footer-links a svg {
+  width: 16px; height: 16px; fill: currentColor;
+}
+.footer-links a:hover { text-decoration: underline; }
+/* About card on white with strong readable ink */
+.about-card{
+  background: var(--paper);
+  color: var(--ink-900);
+  border-radius: 16px;
+  padding: clamp(16px, 2vw, 24px);
+  box-shadow: var(--shadow-1);
+  margin-top: 18px;
+}
+.about-card h2{
+  margin: 0 0 12px;
+  font-size: clamp(18px, 2.2vw, 26px);
+  font-weight: 800;
+  color: var(--brand-800);
+}
+.about-body{
+  margin: 0 0 14px;
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.75;
+  color: var(--ink-700);
+}
+
+/* Subheadings */
+.about-subtitle{
+  margin: 14px 0 8px;
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 700;
+  color: var(--brand-600);
+  letter-spacing: .3px;
+}
+
+/* Interests chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: clamp(13px, 1.1vw, 16px);
+  background: var(--brand-100);
+  color: var(--brand-800);
+  border: 1px solid rgba(19,81,93,.18);
+  transition: background .2s, transform .15s;
+}
+.chip:hover{ background: var(--brand-300); color: #fff; transform: translateY(-1px); }
+/* === Soc/* === Social media: large stacked buttons with brand colors + animation === */
+/* Center socials and make them full width */
+.socials {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  gap: 18px;
+  margin-top: 24px;
+  width: 100%;              /* stretch across the card */
+}
+
+/* Wider pill buttons */
+.socials .s-pill {
+  --bg: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 28px;
+  border-radius: 16px;
+  width: 100%;               /* take full width of container */
+  max-width: 500px;          /* optional: keeps them neat */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.3;
+  background: var(--bg);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .2);
+  transition: transform .2s ease, box-shadow .3s ease, filter .3s ease;
+}
+
+/* Hover effect */
+.socials .s-pill:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
+}
+
+
+/* Brand themes */
+.socials .instagram {
+  background: linear-gradient(
+    45deg,
+    #fdf497 0%,
+    #fd5949 30%,
+    #d6249f 60%,
+    #285AEB 100%
+  );
+  background-size: 300% 300%;
+  animation: instaFlow 6s ease-in-out infinite alternate;
+}
+@keyframes instaFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.socials .x        { --bg: #000; }
+.socials .youtube  { --bg: #FF0000; }
+.socials .linkedin { --bg: #0077B5; }
+.socials .scholar  { --bg: #4285F4; }
+
+/* Even bigger on wide screens */
+@media (min-width: 1100px) {
+  .socials .s-pill {
+    padding: 18px 28px;
+    font-size: 20px;
+    border-radius: 16px;
+  }
+  .socials .s-pill svg {
+    width: 30px;
+    height: 30px;
+  }
+}

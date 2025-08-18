@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui; max-width: 700px; margin: 20px auto; padding: 20px; }
+    label { display:block; margin-top: 12px; }
+    input, textarea { width:100%; padding:8px; margin-top:4px; }
+    button { margin-top:20px; padding:10px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Admin — Profile Settings</h1>
+  <form id="adminForm">
+    <label>Name <input type="text" id="name"></label>
+    <label>Affiliation <input type="text" id="affiliation"></label>
+    <label>Bio <textarea id="bio"></textarea></label>
+    <label>Interests (comma-separated) <input type="text" id="interests"></label>
+    <label>Profile photo URL <input type="text" id="photo"></label>
+    <label>CV file URL <input type="text" id="cv"></label>
+    <label>Twitter <input type="text" id="twitter"></label>
+    <label>LinkedIn <input type="text" id="linkedin"></label>
+    <label>Google Scholar <input type="text" id="scholar"></label>
+    <button type="submit">Generate JSON</button>
+  </form>
+
+  <pre id="output" style="white-space:pre-wrap;background:#f8f8f8;padding:10px;margin-top:20px;"></pre>
+
+  <script>
+    const form = document.getElementById('adminForm');
+    const out = document.getElementById('output');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const data = {
+        profile: {
+          name: document.getElementById('name').value,
+          affiliation: document.getElementById('affiliation').value,
+          bio: document.getElementById('bio').value,
+          interests: document.getElementById('interests').value.split(',').map(s => s.trim()),
+          photo: document.getElementById('photo').value,
+          cv: document.getElementById('cv').value,
+          socials: {
+            twitter: document.getElementById('twitter').value,
+            linkedin: document.getElementById('linkedin').value,
+            scholar: document.getElementById('scholar').value
+          }
+        }
+      };
+
+      out.textContent = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>

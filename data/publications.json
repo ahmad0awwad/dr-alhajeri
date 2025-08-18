@@ -1,0 +1,73 @@
+{
+  "profile": {
+    "name": "Professor Abdullah M . Alhajeri",
+    "affiliation": "Kuwait University, History, Faculty Member National Taiwan University, Liberal education., Visiting Professor",
+    "bio": "Abdullah Alhajeri Professor of Kuwait  Modern and contemporary History , , History  Department , College of Arts , Kuwait University,\nVisiting Professor at National Taiwan University, Centre of Liberal Education.\nAddress: Kuwait",
+    "interests": [
+      "The Persian Gulf",
+      "Gulf Studies",
+      "History Of Qatar",
+      "Bahrain History",
+      "Mediation and Qatari foreign policy"
+    ],
+    "photo": "assets/logo.jpg",
+    "cv": "",
+    "socials": {
+      "twitter": "https://x.com/Torous_BS",
+      "linkedin": "https://x.com/Torous_BS",
+      "instagram": "https://x.com/Torous_BS",
+      "youtube": "https://x.com/Torous_BS"
+    },
+    "i18n": {
+      "en": {
+        "name": "Professor Abdullah M. Alhajeri",
+        "affiliation": "Kuwait University, Department of History, Faculty Member. National Taiwan University, Center for General Education, Visiting Professor.",
+        "bio": "Abdullah Alhajeri is a professor of modern and contemporary Kuwaiti history in the Department of History, College of Arts, Kuwait University. He is also a visiting professor at the Center for General Education, National Taiwan University. Address: Kuwait.",
+        "interests": [
+          "The Persian Gulf",
+          "Gulf Studies",
+          "History of Qatar",
+          "Bahrain History",
+          "Mediation and Qatari foreign policy"
+        ]
+      },
+      "ar": {
+        "name": "الأستاذ الدكتور عبد الله م. الحاجري",
+        "affiliation": "جامعة الكويت، قسم التاريخ، عضو هيئة التدريس. الجامعة الوطنية في تايوان، مركز التعليم العام، أستاذ زائر.",
+        "bio": "عبد الله الحاجري أستاذ في تاريخ الكويت الحديث والمعاصر في قسم التاريخ، كلية الآداب، جامعة الكويت. كما يعمل أستاذًا زائرًا في مركز التعليم العام بجامعة تايوان الوطنية. العنوان: الكويت.",
+        "interests": [
+          "الخليج العربي",
+          "دراسات الخليج",
+          "تاريخ قطر",
+          "تاريخ البحرين",
+          "الوساطة والسياسة الخارجية القطرية"
+        ]
+      }
+    }
+  },
+  "books": [
+    {
+      "id": "g_19myrZQ4",
+      "thumbnail": "assets/covers/christian-minorities-in-kuwait-L0wtoI.jpg",
+      "pdf": "files/christian-minorities-in-kuwait-PHnlqx.pdf",
+      "doi": "",
+      "link": "",
+      "authors": "",
+      "year": null,
+      "venue": "",
+      "i18n": {
+        "en": {
+          "title": "Christian Minorities in Kuwait",
+          "abstract": "This research examines the status and history of Christian minorities in Kuwait, highlighting their integration and experiences within a predominantly Muslim society. It discusses notable churches, such as the National Evangelical Church and the Holy Family Cathedral, and sheds light on the contributions of Christian Kuwaitis throughout the years. The paper explores the complexities surrounding religious freedom and minority rights in the context of Kuwaiti politics and society."
+        },
+        "ar": {
+          "title": "الأقليات المسيحية في الكويت",
+          "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
+        }
+      }
+    }
+  ],
+  "papers": [],
+  "thesis": [],
+  "drafts": []
+}
