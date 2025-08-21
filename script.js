@@ -12,8 +12,12 @@ const translations = {
     drafts: "Drafts",
     interests: "Interests",
     social: "Social Media",
+    Abstract:"Abstract",
     explore: "Explore Publications",
     footerNote: "All rights reserved.",
+    footerOwner: "Torous Media-IT",
+        roles: "Historian • Author • Educator",
+
     tagline: "Research that connects the Gulf’s past to its present—history that informs policy, culture, and society.",
     empty: (k) => `No ${k} yet.`
   },
@@ -27,10 +31,15 @@ const translations = {
     social: "وسائل التواصل",
     explore: "استكشاف المنشورات",
     footerNote: "جميع الحقوق محفوظة.",
+    Abstract:"خلاصة",
+    footerOwner: "طروس للإعلام - تقنية المعلومات",  // ✅ updated Arabic
+        roles: "مؤرخ • مؤلف • أكاديمي",
+
     tagline: "أبحاث تربط ماضي الخليج بحاضره — تاريخ يستنير به المجتمع وصانع القرار.",
     empty: (k) => `لا توجد ${k} بعد.`
   }
 };
+
 
 /* ---------- utils ---------- */
 function esc(s){ return String(s||'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
@@ -97,7 +106,7 @@ function card(it) {
   const abstract = it.abstract ? `<details><summary>Abstract</summary><p>${esc(it.abstract)}</p></details>` : '';
 
   el.innerHTML = `
-    <img class="thumb" src="${thumb}" alt="" onerror="this.src='assets/placeholder.png'">
+    <img class="thumb" src="${thumb}" alt="" onerror="this.src='assets/1.jpg'">
     <div>
       <h3 class="item-title">${title}</h3>
       <p class="meta">${esc(meta)}</p>
@@ -129,6 +138,7 @@ function applyStaticStrings(lang){
   setText('about-title', t.about);
   setText('subtitle-interests', t.interests);
   setText('subtitle-social', t.social);
+setText('subtitle-roles', translations[lang].roles);
 
   // CTA
   setText('cta-explore', t.explore);
@@ -142,11 +152,14 @@ function applyStaticStrings(lang){
 
   // Tagline & note
   setText('footer-tagline', t.tagline);
-  const note = document.querySelector('.footer-note');
-  if (note) {
-    note.innerHTML = `© <span id="year"></span> Professor Abdullah M. Alhajeri — ${t.footerNote}`;
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
+
+const note = document.querySelector('.footer-note');
+if (note) {
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+  setText('footer-owner', t.footerOwner);
+  setText('footer-note-text', t.footerNote);
+
   }
 }
 
@@ -164,8 +177,8 @@ function renderContent(lang){
 
   const avatarEl = document.querySelector('.avatar');
   if (avatarEl) {
-    avatarEl.src = p.photo || 'assets/logo.jpeg';
-    avatarEl.onerror = () => { avatarEl.src = 'assets/logo.jpeg'; };
+    avatarEl.src = p.photo || 'assets/logo2.jpeg';
+    avatarEl.onerror = () => { avatarEl.src = 'assets/logo2.jpeg'; };
   }
 
   // Panels

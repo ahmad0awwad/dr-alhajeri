@@ -10,7 +10,7 @@
       "Bahrain History",
       "Mediation and Qatari foreign policy"
     ],
-    "photo": "assets/logo.jpg",
+    "photo": "assets/logo2.jpg",
     "cv": "",
     "socials": {
       "twitter": "https://x.com/Torous_BS",
@@ -32,7 +32,7 @@
         ]
       },
       "ar": {
-        "name": "الأستاذ الدكتور عبد الله م. الحاجري",
+        "name": "الأستاذ الدكتور عبد الله م. الهاجري",
         "affiliation": "جامعة الكويت، قسم التاريخ، عضو هيئة التدريس. الجامعة الوطنية في تايوان، مركز التعليم العام، أستاذ زائر.",
         "bio": "عبد الله الحاجري أستاذ في تاريخ الكويت الحديث والمعاصر في قسم التاريخ، كلية الآداب، جامعة الكويت. كما يعمل أستاذًا زائرًا في مركز التعليم العام بجامعة تايوان الوطنية. العنوان: الكويت.",
         "interests": [
@@ -48,8 +48,8 @@
   "books": [
     {
       "id": "g_19myrZQ4",
-      "thumbnail": "assets/covers/christian-minorities-in-kuwait-L0wtoI.jpg",
-      "pdf": "files/christian-minorities-in-kuwait-PHnlqx.pdf",
+      "thumbnail": "assets/covers/2.jpg",
+      "pdf": "files/2.pdf",
       "doi": "",
       "link": "",
       "authors": "",
@@ -65,9 +65,928 @@
           "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
         }
       }
+    }, {
+      "id": "1",
+      "thumbnail": "assets/covers/1.jpg",
+      "pdf": "files/1.pdf",
+      "doi": "",
+      "link": "",
+      "authors": "",
+      "year": null,
+      "venue": "",
+      "i18n": {
+        "en": {
+          "title": "History Of  Kuwait",
+          "abstract": "This research examines the status and history of Christian minorities in Kuwait, highlighting their integration and experiences within a predominantly Muslim society. It discusses notable churches, such as the National Evangelical Church and the Holy Family Cathedral, and sheds light on the contributions of Christian Kuwaitis throughout the years. The paper explores the complexities surrounding religious freedom and minority rights in the context of Kuwaiti politics and society."
+        },
+        "ar": {
+          "title": "تاريخ الكويت الإمارة والدولة ( التأسيس التطور الهوية المجتمع)",
+          "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
+        }
+      }
+    },{
+      "id": "3",
+      "thumbnail": "assets/covers/3.pdf",
+      "pdf": "files/1.pdf",
+      "doi": "",
+      "link": "",
+      "authors": "",
+      "year": null,
+      "venue": "",
+      "i18n": {
+        "en": {
+          "title": "introduction to the Modern History Of  Kuwait",
+          "abstract": "This research examines the status and history of Christian minorities in Kuwait, highlighting their integration and experiences within a predominantly Muslim society. It discusses notable churches, such as the National Evangelical Church and the Holy Family Cathedral, and sheds light on the contributions of Christian Kuwaitis throughout the years. The paper explores the complexities surrounding religious freedom and minority rights in the context of Kuwaiti politics and society."
+        },
+        "ar": {
+          "title": "مدخل إلى تاريخ الكويت الحديث والمعاصر",
+          "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
+        }
+      }
+    },{
+      "id": "1",
+      "thumbnail": "assets/covers/4.pdf",
+      "pdf": "files/1.pdf",
+      "doi": "",
+      "link": "",
+      "authors": "",
+      "year": null,
+      "venue": "",
+      "i18n": {
+        "en": {
+          "title": "History Of  Kuwait",
+          "abstract": "This research examines the status and history of Christian minorities in Kuwait, highlighting their integration and experiences within a predominantly Muslim society. It discusses notable churches, such as the National Evangelical Church and the Holy Family Cathedral, and sheds light on the contributions of Christian Kuwaitis throughout the years. The paper explores the complexities surrounding religious freedom and minority rights in the context of Kuwaiti politics and society."
+        },
+        "ar": {
+          "title": "تاريخ الكويت الامارة والدولة: التاسيس - التطور - الهوية - المجتمع",
+          "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
+        }
+      }
     }
   ],
-  "papers": [],
-  "thesis": [],
+"papers": [
+  {
+    "id": "p_2020_joas_christian_minorities",
+    "thumbnail": "files/5.pdf",
+    "pdf": "files/5.pdf",
+    "doi": "",
+    "link": "",
+    "authors": "Abdullah M. Alhajeri",
+    "year": 2020,
+    "venue": "Journal of Oriental and African Studies (Athens, Greece), pp. 255–274",
+    "keywords": [
+      "Christianity",
+      "Middle East Studies",
+      "Islamic Studies",
+      "Religious Studies",
+      "History of Kuwait"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Christian Minorities in Kuwait",
+        "abstract": "This research examines the status and history of Christian minorities in Kuwait, highlighting their integration and experiences within a predominantly Muslim society. It discusses notable churches, such as the National Evangelical Church and the Holy Family Cathedral, and sheds light on the contributions of Christian Kuwaitis throughout the years. The paper explores the complexities surrounding religious freedom and minority rights in the context of Kuwaiti politics and society."
+      },
+      "ar": {
+        "title": "الأقليات المسيحية في الكويت",
+        "abstract": "تتناول هذه الدراسة أوضاع وتاريخ الأقليات المسيحية في الكويت، مع إبراز اندماجها وتجاربها داخل مجتمع يغلب عليه الطابع الإسلامي. وتتناول الكنائس البارزة مثل الكنيسة الإنجيلية الوطنية وكاتدرائية العائلة المقدسة، كما تسلط الضوء على إسهامات الكويتيين المسيحيين عبر السنوات. وتستكشف الورقة تعقيدات حرية الدين وحقوق الأقليات في سياق السياسة والمجتمع الكويتي."
+      }
+    }
+  },
+  {
+  "id": "p_2013_kuwait_saudi_relations",
+  "thumbnail": "assets/covers/6.pdf",
+  "pdf": "files/6.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2013,
+  "venue": "مجلة المؤرخ المصري - كلية الآداب - جامعة القاهرة",
+  "keywords": [
+    "Kingdom of Saudi Arabia",
+    "Arabian/Persian Gulf Studies",
+    "HISTORY OF KUWAIT",
+    "Saudi Arabian History"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwaiti–Saudi Relations: Influence and Interaction Between Constants and the Struggle of Interests",
+      "abstract": "This article analyzes the evolution of Kuwaiti–Saudi relations, highlighting areas of cooperation and friction. It examines Kuwait’s interaction with the First Saudi State and the interplay of interests, Kuwait’s exposure to the internal conflicts of the Second Saudi State, and the re-emergence of Saudi ambitions culminating in the 1902 restoration that launched the Third Saudi State. The study frames these developments between enduring 'constants'—security, trade routes, tribal ties, and regional balance—and shifting power politics in the Gulf."
+    },
+    "ar": {
+      "title": "العلاقات الكويتية السعودية – تأثير وتأثر بين الثوابت وصراع المصالح",
+      "abstract": "تتناول الدراسة تطور العلاقات الكويتية-السعودية مع إبراز مساحات التعاون والاحتكاك. وتستعرض علاقة الكويت بالدولة السعودية الأولى وصراع المصالح، وتأثر الكويت بالصراعات الداخلية في الدولة السعودية الثانية، ثم تجدد مشروع الدولة السعودية الثالثة عام 1902م وما ترتب عليه من تحولات. وتفسر الورقة هذه المسارات بين «الثوابت» (الأمن، طرق التجارة، الروابط القبلية والتوازنات الإقليمية) وبين متغيرات القوة والسياسة في الخليج."
+    }
+  }
+},{
+  "id": "p_2014_kuwait_arabistan",
+  "thumbnail": "assets/covers/7.pdf",
+  "pdf": "files/7.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2014,
+  "venue": "مركز دراسات الخليج والجزيرة العربية - مجلس النشر العلمي - جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Arabistan",
+    "Sheikh Khaz'al",
+    "Khuzestan",
+    "British Policy"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwait and the Fall of Arabistan, 1915–1925",
+      "abstract": "The study examines Kuwait’s stance toward the fall of Arabistan and the nature of relations between Kuwait and Arabistan from 1915 to 1925. It highlights the regional significance of Arabistan under Sheikh Khaz'al—home to the first Arab oil discovery in 1908—and situates the fall of the emirate within the transition in Iran from the Qajar to the Pahlavi dynasty, which ultimately deposed Sheikh Khaz'al in 1925. The article analyzes Kuwait’s responses, including hesitation in political decision-making by Sheikh Ahmad Al-Jaber following Persia’s seizure of Arabistan and the arrest of Sheikh Khaz'al, his transfer to Tehran until his death in 1936, and Britain’s abandonment of prior commitments to safeguard Arabistan’s status—along with the repercussions this had on Kuwait’s position."
+    },
+    "ar": {
+      "title": "الكويت وسقوط عربستان 1915-1925",
+      "abstract": "تأتي أهمية عربستان وأميرها الشيخ خزعل من أن الإمارة شهدت في أيامه أحداثًا غاية في الأهمية؛ فقد كانت المحمّرة أولى الإمارات العربية التي تفجّر النفط في أراضيها عام 1908. كذلك شهدت عربستان انهيار الحكم القاجاري في فارس وقيام الحكم البهلوي مكانه، ذلك الحكم الذي أطاح بالشيخ خزعل وإمارته عام 1925م. وقد حاولنا من خلال هذه الدراسة أن نكشف عن موقف الكويت من سقوط عربستان، فضلًا عن عرض واقع العلاقة التي قامت بين الكويت وعربستان في الفترة ما بين 1915–1925 ومسارها وأثرها على الإمارتين. كما تسعى الدراسة لتحديد طبيعة العلاقة بين الشيخ خزعل وحكام الكويت من بعد الشيخ مبارك الصباح، خاصة التردد في اتخاذ بعض القرارات السياسية من قبل الشيخ أحمد الجابر إثر استيلاء الفرس على عربستان واعتقال أميرها الشيخ خزعل واقتياده إلى طهران التي بقي فيها حتى وفاته عام 1936م. كذلك تطرقت الدراسة لأسباب تخلي بريطانيا عن الشيخ خزعل وأثر ذلك في ردود الأفعال من قبل الشيخ أحمد الجابر، على الرغم من تعهدات بريطانيا السابقة بالمحافظة على أوضاع عربستان وضمان استقلالها عن الجانب الفارسي وإعلان شيوخها حكامًا مستقلين تحت الحماية البريطانية."
+    }
+  }
+},{
+  "id": "p_2021_diwaniyat_kuwait_9",
+  "thumbnail": "assets/covers/8.pdf",
+  "pdf": "files/8.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2021,
+  "venue": "مركز دراسات الخليج والجزيرة العربية – جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Diwaniya",
+    "Political Participation",
+    "Civil Society",
+    "Gulf Studies",
+    "Kuwait Politics"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Diwaniyas in Kuwait (9)",
+      "abstract": "Political participation and reform are central societal issues across the Arab Gulf and have become a key benchmark of genuine political and social development. In Kuwait, multiple political experiences produced diverse patterns of participation, with the diwaniya emerging as the most important informal institution where social, cultural, and political engagement—both supportive and oppositional—takes place, earning it the label of Kuwait’s “mini parliaments.” Throughout the history of the Emirate, diwaniyas played a principal role in anchoring and entrenching democratic practices; the personal networks, discussions, and opinions formed within them often redirected internal and external policy orientations."
+    },
+    "ar": {
+      "title": "الديوانيات في الكويت (9)",
+      "abstract": "تُعدّ قضية المشاركة والتغيير السياسي من أهم القضايا المجتمعية التي تعيشها معظم بلدان الخليج العربي والتي تمتد جذورها لعقود طويلة، وقد أصبحت كذلك مسألة المشاركة السياسية المعيار الأول لأي تطور سياسي ومجتمعي حقيقي لأي دولة من الدول. والكويت شأنها شأن بقية بلدان الخليج مرّت بتجارب سياسية متعددة أفرزت الكثير من الأنماط السياسية المختلفة، وكانت الديوانية هي أهم مؤسسة غير رسمية بحكم الواقع والتوازن الاجتماعي الذي فرضه وجودها داخل المجتمع الكويتي، يُمارَس فيها كافة أشكال المشاركة المجتمعية والثقافية وكذلك السياسية سواء المؤيدة أو المعارضة، وظلت هكذا حتى يومنا هذا مما دعا الكثير إلى أن يطلق عليها برلمانات الكويت المصغرة. والديوانية في الكويت لها وظائف متعددة أبرزها الوظيفة السياسية؛ فقد لعبت الديوانية الكويتية في مختلف عمر الإمارة ومنذ النشأة دورًا رئيسًا وبارزًا في تثبيت دعائم الديمقراطية وترسيخها، وكان للعلاقات الشخصية والمناقشات والآراء الدائرة فيها دور مهم في تحويل مسار الكثير من الاتجاهات في السياسة سواء الداخلية أو الخارجية للإمارة."
+    }
+  }
+},{
+  "id": "p_2021_christian_minorities_kw_8",
+  "thumbnail": "assets/covers/9.pdf",
+  "pdf": "files/9.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2021,
+  "venue": "جامعة الكويت – مركز دراسات الخليج والجزيرة العربية",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Christianity",
+    "Religious Minorities",
+    "Gulf Studies",
+    "Kuwait"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Christian Minorities in Kuwait (8)",
+      "abstract": "The study explores the history and presence of Christian Kuwaitis and the entry of Christianity into Kuwait, situating religious and ethnic minorities within two centuries of political, economic, cultural, and ideological developments in the Arab region. It focuses on integration processes that largely unfolded without violence, outlines the challenges of documenting this minority in Kuwait, and discusses perceptions of Christianity in the Arabian Peninsula amid the rise of Islam. The paper also notes the existence of a historic church building in central Kuwait City near the National Assembly."
+    },
+    "ar": {
+      "title": "الأقليات المسيحية في الكويت (8)",
+      "abstract": "أثّرت الأقليات الدينية والإثنية بشكل كبير على التطورات السياسية والاقتصادية والثقافية والأيديولوجية في القرنين الأخيرين بالوطن العربي. ورغم ما شهدته علاقات هذه الأقليات مع السلطة والسكان من تغيّرات متسارعة وكبيرة، إلا أن بعض الأقليات اندمجت وتعايشت تدريجيًا بعيدًا عن العنف والصراعات. وبالنسبة للكويت والخليج العربي، تتناول الدراسة تاريخ إحدى أهم الأقليات غير المسلمة في الكويت (المسيحيون الكويتيون)، وكيفية دخول المسيحية إلى الإمارة ووضع المسيحيين الكويتيين فيها. لا تسعى الدراسة إلى نقاش ديني أو صراع سياسي أو عرقي، بل تضع المسيحية كديانة سماوية انطلقت من المشرق العربي وانتشرت عالميًا، وإن ظل حضورها ضعيفًا في الجزيرة العربية بعد ظهور الإسلام. وتشير الدراسة إلى وجود مبنى كنيسة تاريخي في قلب العاصمة الكويتية قرب مجلس الأمة، وتناقش صعوبات التناول التاريخي لهذه الأقلية."
+    }
+  }
+}
+,{
+  "id": "p_2022_triarchic_rule_kuwait_1",
+  "thumbnail": "assets/covers/10.pdf",
+  "pdf": "files/10.pdf",
+  "doi": "10.34120/0382-048-184-001",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2022,
+  "venue": "مجلة دراسات الخليج والجزيرة العربية – جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Al Sabah",
+    "Al Khalifa",
+    "Al Jalahma",
+    "Historiography",
+    "Primary Sources"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Dialectic of Triarchic Rule in Kuwait (Al Sabah, Al Khalifa, Al Jalahma): An Analytical Reading of Primary Texts (1)",
+      "abstract": "Objective: To reassess a core assumption in Kuwaiti historiography—the claim that a triarchic, power-sharing rule by Al Sabah, Al Khalifa, and Al Jalahma existed in Kuwait’s early history. Method: Historical–analytical and critical examination of the issue’s core elements through primary Arabic sources and Western archival documents. Findings: A close reading of the principal primary sources—local and regional—reveals no explicit evidence confirming a triarchic, participatory system of government in Kuwait. The long-standing thesis appears insufficiently precise and needs revision within narratives of state formation, despite the appeal of ‘participation and consultation’ frameworks in modern political development literature."
+    },
+    "ar": {
+      "title": "جدلية الحكم الثلاثي على أرض الكويت (آل صباح، آل خليفة، الجلاهمة) قراءة تحليلية للنصوص الأولية. (1)",
+      "abstract": "الأهداف: تعالج الدراسة مسألة محورية في تاريخ الكويت وهي ادعاء قيام حكم تشاركي ثلاثي بين آل صباح وآل خليفة والجلاهمة. المنهج: اتبعت الدراسة منهجًا تاريخيًا تحليليًا نقديًا يقوم على تفكيك عناصر الإشكالية وفحص المصادر العربية والوثائق الغربية ذات الصلة. النتائج: يُظهر فحص المصادر التاريخية الأصيلة—المحلية والعربية—عدم وجود ما يؤكد صراحة قيام حكم تشاركي ثلاثي في الكويت؛ ما يجعل الأطروحة الشائعة غير دقيقة وتستدعي المراجعة ضمن سرديات تشكل السلطة بالكويت، رغم ما تمنحه أدبيات «المشاركة والشورى» من جاذبية تفسيرية."
+    }
+  }
+}
+,{
+  "id": "p_2010_diwaniyas_jilc",
+  "thumbnail": "assets/covers/11.pdf",
+  "pdf": "files/11.pdf",
+  "doi": "10.1080/1528817X.2010.528592",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2010,
+  "venue": "Journal of Islamic Law and Culture, USA (Publisher: Informa UK Limited)",
+  "keywords": [
+    "Sociology",
+    "Law",
+    "Politics",
+    "HISTORY OF KUWAIT",
+    "Historical Heritage"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Development of Political Interaction in Kuwait Through the “Dīwānīyas” From Their Beginnings Until The Year 1999",
+      "abstract": "The study highlights the functional role of diwaniyas in Kuwaiti society as arenas of socialization, deliberation, and informal governance. It traces their evolution from Kuwait’s early state-building through the end of the twentieth century, showing how diwaniyas mediated social change, shaped political opinion, and reflected the overlapping influences of domestic and external politics. Focusing on historical heritage rather than contemporary developments, the article analyzes how these gatherings became key sites of participation and informal law–politics interaction up to 1999."
+    },
+    "ar": {
+      "title": "تطوّر التفاعل السياسي في الكويت عبر «الدواوين» منذ نشأتها حتى عام 1999",
+      "abstract": "تهدف الدراسة إلى إبراز الدور الوظيفي للدواوين في المجتمع الكويتي بوصفها فضاءات للتنشئة الاجتماعية والتشاور وصناعة المواقف السياسية غير الرسمية. وتتتبّع تطورها منذ بدايات قيام الدولة حتى نهاية القرن العشرين، مبيّنةً كيف أسهمت الدواوين في استيعاب التحولات الاجتماعية وصياغة الرأي العام ضمن تداخل السياقين السياسيين الداخلي والخارجي. ويركّز البحث على الإرث التاريخي للدواوين وعلاقتها بحقلي القانون والسياسة حتى عام 1999 دون تناول الفترات الراهنة."
+    }
+  }
+},
+{
+  "id": "p_2022_mubarak_american_role_10",
+  "thumbnail": "assets/covers/12.pdf",
+  "pdf": "files/12.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2022,
+  "venue": "مركز دراسات الخليج والجزيرة العربية – جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Sheikh Mubarak Al-Sabah",
+    "American Role",
+    "Foreign Policy",
+    "Gulf Studies",
+    "Modern History"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Sheikh Mubarak’s Position on the Development of the American Role (10)",
+      "abstract": "The article examines Sheikh Mubarak Al-Sabah’s stance toward the emerging American presence in the Gulf during his reign, analyzing diplomatic correspondence, regional press, and British archival material. It traces how commercial, missionary, and consular activities intersected with Kuwait’s security considerations and treaty obligations, and assesses whether the evolving U.S. role was perceived as an opportunity, a constraint, or a limited factor within a British-dominated environment. The study situates Kuwait’s responses within broader Gulf transformations at the turn of the twentieth century."
+    },
+    "ar": {
+      "title": "موقف الشيخ مبارك من تطور الدور الأمريكي (10)",
+      "abstract": "تبحث الدراسة موقف الشيخ مبارك الصباح من بروز الدور الأمريكي في منطقة الخليج خلال فترة حكمه، عبر تحليل المراسلات الدبلوماسية والمادتين الصحفية والأرشيفية البريطانية. وتتبع تداخل الأنشطة التجارية والإرسالية والقنصلية مع اعتبارات الأمن والالتزامات المعاهدية للكويت، وتقيّم كيف جرى إدراك الدور الأمريكي بين فرصة ممكنة أو قيد محتمل ضمن بيئة يهيمن عليها النفوذ البريطاني. وتضع استجابات الكويت في سياق التحولات الأوسع في الخليج مطلع القرن العشرين."
+    }
+  }
+}
+,{
+  "id": "p_2011_mubarak_us_role_jilc",
+  "thumbnail": "assets/covers/13.pdf",
+  "pdf": "files/13.pdf",
+  "doi": "10.1080/1528817X.2012.693390",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2011,
+  "venue": "Journal of Islamic Law and Culture (English), Publisher: Informa UK Limited",
+  "keywords": [
+    "Law",
+    "International Relations",
+    "United States",
+    "HISTORY OF KUWAIT"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Attitude of Sheikh Mubarak Towards the Development of the American Role on Kuwait's Territory, 1896–1915 (english pdf)",
+      "abstract": "The article traces one early strand of Kuwait’s international relations by examining interactions with the United States during the reign of Sheikh Mubarak Al-Sabah (1896–1915). Drawing on diplomatic records, missionary activity, and consular correspondence, it outlines the context in which an American presence emerged and analyzes Kuwait’s stance toward it—assessing motives, constraints, and implications for law, politics, and external alignment at the turn of the twentieth century."
+    },
+    "ar": {
+      "title": " (english pdf) موقف الشيخ مبارك من تطور الدور الأمريكي على أرض الكويت، 1896–1915",
+      "abstract": "يتتبّع المقال أحد بدايات علاقات الكويت الدولية عبر دراسة التفاعلات مع الولايات المتحدة خلال حكم الشيخ مبارك الصباح (1896–1915). وبالاستناد إلى سجلات دبلوماسية وأنشطة إرسالية ومراسلات قنصلية، يوضح السياق الذي ظهر فيه الحضور الأمريكي ويحلّل موقف الكويت منه، مع تقييم الدوافع والقيود والآثار القانونية والسياسية على توجهات الدولة في مطلع القرن العشرين."
+    }
+  }
+}
+,{
+  "id": "p_2014_bedoun_mes",
+  "thumbnail": "assets/covers/14.pdf",
+  "pdf": "files/14.pdf",
+  "doi": "10.1080/00263206.2014.941357",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2014,
+  "venue": "Middle Eastern Studies (Journal)",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Bedoun",
+    "Statelessness",
+    "Citizenship",
+    "Gulf Studies"
+  ],
+  "i18n": {
+    "en": {
+      "title": "'The Bedoun': Kuwaitis without an Identity",
+      "abstract": "The article defines the term “Bedoun” and traces its historical formation in Kuwait, explaining who is included under the label and how legal, social, and political developments shaped their status. It outlines key phases in classification and documentation policies, and examines the implications of statelessness for identity, mobility, and access to rights."
+    },
+    "ar": {
+      "title": "«البدون»: كويتيون بلا هوية",
+      "abstract": "تقدّم الدراسة تعريفًا بمصطلح «البدون» وتتتبّع تشكّله التاريخي في الكويت، موضحةً مَن يشملهم هذا الوصف وكيف أسهمت التطورات القانونية والاجتماعية والسياسية في رسم وضعهم. كما تعرض المراحل الأساسية لسياسات التسجيل والتصنيف وتبحث آثار انعدام الجنسية على الهوية والتنقل والحصول على الحقوق."
+    }
+  }
+}
+,{
+  "id": "p_2020_ottoman_doc_1701",
+  "thumbnail": "assets/covers/25.pdf",
+  "pdf": "files/25.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": 2020,
+  "venue": "«وثائق تاريخية» – دورية ربع سنوية، مركز دراسات الخليج والجزيرة العربية، جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "History",
+    "Kuwait",
+    "Ottoman Document",
+    "Historiography"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwait’s History and the 1701 Ottoman Document: Between a Textual Crisis and the Dimensions of Content",
+      "abstract": "This study revisits the contested 1701 Ottoman document, first brought to scholarly attention in 1982, which appeared to challenge entrenched narratives about the ʿUtub and the dating of their settlement in Kuwait (and later Bahrain). It surveys how the document entered historical writing, the range of scholarly reactions, and the divergent translations that stem from issues in reading the text rather than its substance. The article argues that overreliance on British records and the polarization between uncritical acceptance and outright rejection have produced a muted and distorted place for the document in Kuwaiti historiography. By collating translations and unpacking the document’s historical signals, the study encourages broader, source-plural, and more nuanced research agendas on Kuwait’s early history."
+    },
+    "ar": {
+      "title": "تاريخ الكويت والوثيقة العثمانية 1701م بين أزمة النص وأبعاد المضمون",
+      "abstract": "تتناول الدراسة بإسهاب «إشكالية» الوثيقة العثمانية المؤرخة سنة 1701م التي اكتُشفت بحثيًا عام 1982م، وما أثارته من إعادة نظر في سرديات العتوب وتاريخ استقرارهم بالكويت (ولاحقًا البحرين). تستعرض كيفية تسرب الوثيقة إلى الأدبيات التاريخية ومواقف الباحثين منها، وتعرض الترجمات المختلفة وتبيّن أن اختلافها مردّه إلى قراءة نص الوثيقة لا مضمونها. وتنتقد الدراسة الانغلاق على مصادر بعينها—وخاصة البريطانية—وحدّة الاستقطاب بين مناصرة الوثيقة ورفضها، وهو ما أضعف حضورها في كتابة تاريخ الكويت. وتخلص إلى أن تفكيك الترجمات وإشارات الوثيقة يمكن أن يفتح آفاقًا بحثية أوسع وأكثر شمولًا لفهم بدايات التاريخ الكويتي."
+    }
+  }
+}
+
+,{
+  "id": "p_murtada_bin_alwan_1709_kuwait",
+  "thumbnail": "assets/covers/17.pdf",
+  "pdf": "files/17.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": null,
+  "venue": "«وثائق تاريخية» – دورية ربع سنوية، مركز دراسات الخليج والجزيرة العربية، جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "History",
+    "Kuwait",
+    "Manuscripts",
+    "Travel Accounts"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwait in Murtadā b. ʿAlwān’s Manuscript (1709)",
+      "abstract": "This article analyzes the passages on Kuwait in the 1709 manuscript attributed to Murtadā b. ʿAlwān. Through a close reading of textual cues and references, it reassesses several well-known concepts in Kuwait’s early history—not only the dating and circumstances of its foundation, but also the town’s earlier names (al-Kūt/al-Qurayn). The aim is to reach a more grounded interpretation that can refine prevailing narratives of Kuwait’s origins."
+    },
+    "ar": {
+      "title": "الكويت في مخطوطة مرتضى بن علوان 1709م",
+      "abstract": "يتناول المقال تحليل الفقرات التي تحدثت عن الكويت في مخطوطة مرتضى بن علوان المؤرخة بسنة 1709م، مع التوسع في قراءة الدلالات والإشارات النصية للوصول إلى مقاربة أكثر واقعية تُسهم في إعادة النظر ببعض المفاهيم التاريخية الشائعة عن تاريخ الكويت؛ ليس فقط ما يتصل بتاريخ التأسيس والنشأة، بل أيضًا ما يتعلق بالمسمّى الأقدم للبلدة (الكوت/القرين)."
+    }
+  }
+}
+,{
+  "id": "p_bedu_hadar_kuwait_1962",
+  "thumbnail": "assets/covers/18.pdf",
+  "pdf": "files/18.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "Abdullah M. Alhajeri",
+  "year": null,
+  "venue": "«وثائق تاريخية» – دورية ربع سنوية، مركز دراسات الخليج والجزيرة العربية، جامعة الكويت",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Bedouin",
+    "Hadhr",
+    "Tribalism",
+    "Urbanization",
+    "Kuwait"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Historical Roots of the Bedouin-Hadhr Dichotomy in Kuwait from Its Foundation until 1962",
+      "abstract": "This study explores the historical roots of the Bedouin–Hadhr (nomadic–urban) dichotomy in Kuwait, tracing its evolution from the town’s early foundation until the promulgation of the 1962 constitution. It examines how tribal, social, and economic dynamics shaped this duality and how it influenced political and cultural development in modern Kuwait."
+    },
+    "ar": {
+      "title": "الجذور التاريخية لثنائية البدو والحضر في الكويت منذ النشأة حتى عام 1962م",
+      "abstract": "تتناول الدراسة الجذور التاريخية لثنائية البدو والحضر في الكويت، منذ مرحلة النشأة وحتى صدور دستور عام 1962م، مركزة على الأبعاد القبلية والاجتماعية والاقتصادية التي أسهمت في تكوين هذه الثنائية، وكيف انعكست على المسار السياسي والثقافي للكويت الحديثة."
+    }
+  }
+},{
+  "id": "p_mubarak_khazal_success_failure_2013",
+  "thumbnail": "assets/covers/20.pdf",
+  "pdf": "files/20.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "مجلة حوليات كلية الآداب - مجلس النشر العلمي - جامعة الكويت",
+  "year": 2013,
+  "venue": "مجلة حوليات كلية الآداب - جامعة الكويت",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Mubarak Al-Sabah",
+    "Khazal Al-Kaabi",
+    "Arabistan",
+    "Comparative Study",
+    "Political History"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Mubarak Al-Sabah and Khazal Al-Kaabi: Success Factors and Collapse Consequences (1896–1915): A Comparative Study",
+      "abstract": "This comparative study examines the political and regional roles of Sheikh Mubarak Al-Sabah of Kuwait (1896–1915) and Sheikh Khazal Al-Kaabi of Arabistan (1897–1925). Despite a close friendship that could have developed into a stronger alliance, external interventions undermined this potential. The paper highlights the similarities in the conditions under which both rulers came to power, the international pressures they faced, and their different responses. Mubarak successfully established stability in Kuwait by consolidating authority and limiting foreign influence to Britain, while Khazal struggled with internal tribal conflicts and foreign pressures, ultimately leading to Arabistan's fall. The study argues that Mubarak’s political acumen ensured Kuwait’s survival as an independent emirate, whereas Khazal’s delayed responses to external and internal challenges hastened Arabistan’s collapse."
+    },
+    "ar": {
+      "title": "مبارك الصباح وخزعل الكعبي: عوامل النجاح وتداعيات الانهيار (1896–1915): دراسة مقارنة",
+      "abstract": "تتناول هذه الدراسة المقارنة الدور السياسي والإقليمي لكل من الشيخ مبارك الصباح (1896–1915) في الكويت، والشيخ خزعل الكعبي (1897–1925) في عربستان. ورغم الصداقة الوثيقة التي جمعت بينهما والتي كان يمكن أن تتحول إلى تحالف متين، إلا أن التدخلات الخارجية حالت دون ذلك. وتبرز الدراسة التشابه في ظروف توليهما الحكم وضغوط القوى الدولية، وكيفية تعامل كل منهما معها. فقد نجح مبارك في تحقيق الاستقرار بالكويت عبر ترسيخ السلطة وحصر النفوذ الأجنبي في بريطانيا، بينما عانى خزعل من صراعات قبلية وضغوط خارجية أدت في النهاية إلى سقوط عربستان. وتؤكد الدراسة أن حنكة مبارك السياسية أنقذت الكويت وضمنت استقلالها، في حين أن تأخر خزعل في مواجهة التحديات الداخلية والخارجية عجل بانهيار إمارته."
+    }
+  }
+}
+,{
+  "id": "p_diwaniya_oxford_islam_politics_2011",
+  "thumbnail": "assets/covers/21.pdf",
+  "pdf": "files/21.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "The Oxford Encyclopedia of Islam and Politics",
+  "year": 2011,
+  "venue": "The Oxford Encyclopedia of Islam and Politics",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Diwaniya",
+    "Political Culture",
+    "Islamic Politics",
+    "Social Institutions"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Diwaniya",
+      "abstract": "The term 'Diwaniya' originates from the Persian word 'divan,' meaning council, office, or register. In the context of Kuwait and the wider Gulf, it refers to a social and political institution central to urban life, where men gather to discuss public affairs, exchange information, and reinforce social bonds. Over time, the diwaniya evolved into a semi-formal space for political expression and civic engagement, playing a significant role in shaping public opinion and political culture in Kuwait."
+    },
+    "ar": {
+      "title": "الديوانية",
+      "abstract": "يرجع أصل مصطلح \"ديوانية\" إلى الكلمة الفارسية \"ديوان\" التي تعني المجلس أو المكتب أو السجل. وفي سياق الكويت ومنطقة الخليج عامة، تشير الديوانية إلى مؤسسة اجتماعية وسياسية مركزية في الحياة الحضرية، حيث يجتمع الرجال لمناقشة الشؤون العامة وتبادل المعلومات وتعزيز الروابط الاجتماعية. ومع مرور الوقت، تطورت الديوانية لتصبح فضاءً شبه رسمي للتعبير السياسي والمشاركة المدنية، ولعبت دورًا مهمًا في تشكيل الرأي العام والثقافة السياسية في الكويت."
+    }
+  }
+}
+,{
+  "id": "p_diwaniyas_political_interaction_kuwait_1999",
+  "thumbnail": "assets/covers/22.pdf",
+  "pdf": "files/22.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": null,
+  "venue": "",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Diwaniya",
+    "Political Participation",
+    "Civic Life",
+    "Kuwaiti Society"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Development of Political Interaction in Kuwait through the “Diwaniyas” from Their Beginnings until 1999",
+      "abstract": "This study traces how diwaniyas—informal gathering spaces central to Kuwaiti social life—evolved into arenas for political conversation, networking, and mobilization. It maps their historical emergence, social rules, and functions in shaping relationships between citizens and elites, and highlights their role in opinion formation, electoral engagement, and issue advocacy up to 1999. The paper examines patterns of inclusivity and exclusivity, the impact of urbanization and education, and the diwaniya’s contribution to Kuwait’s distinctive public sphere."
+    },
+    "ar": {
+      "title": "تطور التفاعل السياسي في الكويت عبر «الدواوين» منذ نشأتها حتى عام 1999",
+      "abstract": "ترصد هذه الدراسة تطور الديوانيات—بوصفها فضاءات اجتماعية محورية في المجتمع الكويتي—لتصبح ساحات للحوار السياسي وبناء الشبكات والتعبئة. وتتناول نشأتها وتقاليدها ووظائفها في تشكيل العلاقة بين المجتمع والنخب، مع إبراز دورها في تكوين الرأي العام والمشاركة الانتخابية والدفاع عن القضايا حتى عام 1999. كما تبحث في أنماط الشمول والاستبعاد، وتأثير التحضر والتعليم، ومساهمة الديوانية في تكوين المجال العام الكويتي."
+    }
+  }
+}
+
+,{
+  "id": "p_ibn_labun_methodology_saudi_states_2014",
+  "thumbnail": "assets/covers/24.pdf",
+  "pdf": "files/24.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2014,
+  "venue": "دار بن لعبون / مكتبة البابطين المركزية للشعر العربي – الكويت",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Ibn Labun",
+    "Historiography",
+    "First Saudi State",
+    "Second Saudi State",
+    "Political History",
+    "Arabian Gulf"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Ibn Labun’s Methodology and His Observation of the Political Reality of the First and Second Saudi States",
+      "abstract": "This study argues that the historian-poet Ibn Labun has been unjustly overlooked despite the importance of his writings for understanding a pivotal period in the Arabian Gulf. It reconstructs his historical method and evidentiary base—poetry, eyewitness testimony, and local records—and uses his texts to read the political realities surrounding the First and Second Saudi States. By situating Ibn Labun within regional historiography, the work reassesses his contribution as a contemporary observer and clarifies how his narrative techniques and source criticism captured the dynamics of power, society, and conflict in central Arabia and the Gulf."
+    },
+    "ar": {
+      "title": "منهجية ابن لعبون ورصد الواقع السياسي للدولة السعودية الأولى والثانية",
+      "abstract": "تؤكد هذه الدراسة أن مؤرخنا الشاعر ابن لعبون قد ظلمه التاريخ وبقي مغيبًا رغم قيمة ما كتبه عن الحقبة التي عايشها شاهدًا على أحداثها. وتعيد بناء منهجيته في التأريخ وأدواته المعرفية—من الشعر والرواية الشفوية والوثائق المحلية—لفهم قراءته للواقع السياسي المرتبط بالدولة السعودية الأولى والثانية. كما تضع إسهامه ضمن سياق الكتابة التاريخية في الخليج العربي، مبيّنة كيف التقط بأساليبه السردية ونقده للمصادر تحولات السلطة والمجتمع والصراع في نجد والخليج."
+    }
+  }
+},{
+  "id": "p_critical_study_rashid_history_of_kuwait_25",
+  "thumbnail": "assets/covers/25.pdf",
+  "pdf": "files/25.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": null,
+  "venue": "",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Abdulaziz Al-Rashid",
+    "Historiography",
+    "Oral History",
+    "Methodology",
+    "Textual Criticism",
+    "Gulf History"
+  ],
+  "i18n": {
+    "en": {
+      "title": "A Critical Study of the Methodology and Historical Text of 'History of Kuwait' by Abdulaziz Al-Rashid",
+      "abstract": "Abdulaziz Al-Rashid (1887–1938) was the first Kuwaiti historian to compile a comprehensive national history in a single volume, preserving local memory and turning oral accounts into a written record. This study critiques his methodology and the structure of the text, probing whether reliance on local/oral narratives and a literary style affected the historicality of events. It analyzes his use of poetry, narrative technique, and source handling, noting strengths and gaps in documentation. While the work sometimes lacks a clear analytical framework and lets literary elements overshadow events, the study concludes that 'Tārīkh al-Kuwait' remains a foundational reference closely tied to Kuwait’s lived realities and retains enduring historical value."
+    },
+    "ar": {
+      "title": "دراسة نقدية في منهجية ومضمون النص التاريخي لكتاب «تاريخ الكويت» لعبد العزيز الرشيد",
+      "abstract": "يُعد عبد العزيز الرشيد (1887–1938) من أبرز رواد التاريخ الكويتي، إذ كان أول من دوّن تاريخ الكويت في مؤلف واحد حافظ على الذاكرة الوطنية وحوّل الرواية الشفوية إلى نص مكتوب. تفحص هذه الدراسة منهجيته وبنية النص وكيفية توظيف الرواية والشعر، وتطرح إشكالية مدى تأثير الاعتماد على الرؤية المحلية واللغة الأدبية في تاريخانية السرد. وتخلص إلى أن العرض التاريخي لدى الرشيد يفتقر أحيانًا إلى إطار منهجي واضح وأن الطابع الأدبي قد يطغى على الحدث، غير أن «تاريخ الكويت» يظل مرجعًا أساسيًا مرتبطًا بواقع الإمارة ويحافظ على قيمته التاريخية."
+    }
+  }
+}
+,{
+  "id": "p_abdullah_al_salim_nationalism_crisis_1961_2014",
+  "thumbnail": "assets/covers/26.pdf",
+  "pdf": "files/26.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2014,
+  "venue": "مجلة دراسات الخليج والجزيرة العربية",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Abdullah Al-Salim",
+    "Arab Nationalism",
+    "1961 Kuwait Crisis",
+    "Political History",
+    "Foreign Policy",
+    "Domestic Politics"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Sheikh Abdullah Al-Salim’s Attitude toward the Nationalist Current in Kuwait during the 1961 Crisis",
+      "abstract": "This study analyzes the ruler of Kuwait, Sheikh Abdullah Al-Salim (1950–1965), and his stance toward Kuwaiti Arab nationalist movements before and after the 1961 crisis. It argues that President Nasser’s supportive position during the crisis reassured Abdullah Al-Salim, shifting his outlook from suspicion at the outset to endorsement after its resolution. Through thematic axes, the paper traces the state’s pre-crisis restrictions on nationalist activity; examines how the 1961 crisis reconfigured relations between the regime and nationalist forces; and highlights subsequent policy shifts, including appointing a leading Nasserist to head the foreign ministry, new ambassadorial postings, and greater inclusion of nationalist figures near decision-making circles. The study concludes that earlier misuses of Arab nationalism before 1961 contributed to the ruler’s initial apprehension."
+    },
+    "ar": {
+      "title": "موقف الشيخ عبد الله السالم من التيار القومي في الكويت إبّان أزمة 1961م",
+      "abstract": "تتناول الدراسة موقف حاكم الكويت الشيخ عبد الله السالم (1950–1965) من التيارات القومية الكويتية قبل أزمة 1961 وبعدها، وتبيّن كيف أسهم موقف الرئيس جمال عبد الناصر أثناء الأزمة في طمأنة الحاكم وتحويل موقفه من الشك والتوجس في بدايتها إلى الدعم والمساندة بعد انتهائها. وتعرض عبر محاور عدة تاريخ الحركة القومية في الكويت وسياسات التضييق قبل الأزمة، ثم أثر الأزمة في إعادة تشكيل العلاقة بين السلطة والقوميين، وما تبعها من تحولات مثل تعيين قطب ناصري على رأس الخارجية وتعيينات دبلوماسية جديدة وإشراك شخصيات قومية في دوائر القرار. وتخلص الدراسة إلى أن التوظيف الخاطئ لورقة القومية العربية قبل 1961 كان من أسباب تخوف الحاكم آنذاك."
+    }
+  }
+},{
+  "id": "p_al_sabah_merchants_kuwait_2009",
+  "thumbnail": "assets/covers/27.pdf",
+  "pdf": "files/27.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "المجلة العربية للعلوم الإنسانية - مجلس النشر العلمي - جامعة الكويت",
+  "year": 2009,
+  "venue": "المجلة العربية للعلوم الإنسانية - جامعة الكويت",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Al-Sabah",
+    "Merchants",
+    "Political History",
+    "Social Structure",
+    "Modernization",
+    "Power Relations"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Historical Development of the Relationship between the Al-Sabah Family and Merchants in Kuwait from Its Beginnings until the Reign of Sheikh Abdullah Al-Salim",
+      "abstract": "This study explores Kuwait as a case of successful collaboration between ruling elites and merchants in building a balanced social order. Since its early formation, the Al-Sabah family recognized the political and social weight of merchants, integrating them into governance and acknowledging their role as representatives of their communities. This pragmatic alliance—based not on religious or tribal solidarity but on shared interests—fostered stability, modernization, and gradual democratization. The study also evaluates moments of tension in this relationship, the merchants’ reformist and constitutionalist demands, and the role of civic solidarity (ʿasabiyya) in shaping Kuwait’s political development."
+    },
+    "ar": {
+      "title": "تطور العلاقة التاريخية بين آل الصباح والتجار في الكويت من النشأة حتى عهد الشيخ عبد الله السالم",
+      "abstract": "تتناول هذه الدراسة الكويت بوصفها نموذجًا لنجاح النخبة الحاكمة في بناء توازن مجتمعي عبر تحالفها مع فئة التجار منذ بدايات النشأة. فقد أدرك آل الصباح مبكرًا أهمية الدور السياسي والاجتماعي للتجار، فكان هناك اعتراف متبادل وتضامن لم يقم على أساس ديني أو قبلي بل على المصالح المشتركة، مما ساعد على تحقيق الاستقرار والتحديث وبناء مجتمع عصري. كما تناقش الدراسة لحظات الفتور والتجاذب في العلاقة، ومطالب التجار الإصلاحية والدستورية، ودور العصبية المدنية في التطور السياسي، مؤكدة أن هذه العلاقة أسهمت في تشكيل الدولة الحديثة في الكويت."
+    }
+  }
+},{
+  "id": "p_britain_kuwait_educational_aid_trucial_states_2011",
+  "thumbnail": "assets/covers/28.pdf",
+  "pdf": "files/28.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "حوليات الآداب والعلوم الاجتماعية - مجلس النشر العلمي - جامعة الكويت",
+  "year": 2011,
+  "venue": "حوليات الآداب والعلوم الاجتماعية - جامعة الكويت",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Britain",
+    "Trucial States",
+    "Educational Aid",
+    "Kuwaiti Foreign Policy",
+    "Arab Unity",
+    "Modernization"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Britain and Kuwaiti Educational Aid to the Trucial States (1953–1971)",
+      "abstract": "This study explores Kuwait’s educational initiatives in the Trucial States between 1953 and 1971, situating them within the broader regional and political context. It highlights Sheikh Abdullah Al-Salim’s early visits as a turning point for institutional education in the region and investigates the British opposition to these efforts. While the aid carried political implications, the research argues that Kuwait’s primary motive was humanitarian and pan-Arab, aiming to foster regional solidarity and support modernization. The study also emphasizes the role of the Arab League, the obstacles posed by British authorities, and the significance of Kuwait’s growing regional influence during its path toward modernization and nation-building."
+    },
+    "ar": {
+      "title": "بريطانيا والمساعدات التعليمية الكويتية لإمارات الساحل المتصالح (1953–1971)",
+      "abstract": "تتناول هذه الدراسة الجهود التعليمية الكويتية في إمارات الساحل المتصالح خلال الفترة من 1953 إلى 1971، في سياقها السياسي والإقليمي الأوسع. وتبرز زيارة الشيخ عبد الله السالم المبكرة كنقطة انطلاق للتعليم النظامي هناك، كما تناقش المعارضة البريطانية لهذه الجهود. وتؤكد الدراسة أن المساعدات لم تكن ذات أهداف سياسية مباشرة بقدر ما كانت تعبيرًا عن دور إنساني وقومي عربي، ساعية إلى تدعيم وحدة الأمة ودعم مسار التحديث. كما تبرز دور الجامعة العربية في هذه الجهود، ومحاولات بريطانيا لعرقلتها، وأهمية الدور الكويتي المتنامي في المنطقة في ظل مسارها نحو الحداثة وبناء الدولة."
+    }
+  }
+}
+,{
+  "id": "p_kuwait_wahhabi_movement_1744_1818_2006",
+  "thumbnail": "assets/covers/29.pdf",
+  "pdf": "files/29.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2006,
+  "venue": "مجلة وقائع تاريخية - مركز البحوث والدراسات التاريخية - جامعة القاهرة",
+  "keywords": [
+    "History",
+    "Kuwait",
+    "HISTORY OF KUWAIT",
+    "Wahhabi Movement",
+    "First Saudi State",
+    "Regional Politics",
+    "Religious Reform",
+    "18th–19th Century"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwait and the Wahhabi Movement (1744–1818)",
+      "abstract": "This study examines the nature of relations between Kuwait and the Wahhabi movement as it rose to become a major political force in the Arabian Peninsula. It traces the interplay between religious reform and regional power politics, analyzing how trade routes, security concerns, tribal alliances, and Ottoman–Iraqi–Najdi dynamics shaped Kuwait’s positions from the mid-18th to the early 19th century. The paper argues that Kuwait’s approach balanced pragmatic diplomacy with the realities of a rapidly expanding Wahhabi–Saudi authority."
+    },
+    "ar": {
+      "title": "الكويت والدعوة الوهابية (1744–1818)",
+      "abstract": "تبحث هذه الدراسة طبيعة العلاقات بين الكويت والدعوة الوهابية التي أصبحت إحدى القوى السياسية الكبرى في الجزيرة العربية، وتتابع تداخل البعد الديني مع معطيات القوة الإقليمية. وتعرض كيف أثّرت طرق التجارة وأمن السواحل والتحالفات القبلية وتوازنات العثمانيين والعراق ونجد في مواقف الكويت بين منتصف القرن الثامن عشر وبداية القرن التاسع عشر، لتخلص إلى أن سياسة الكويت اتسمت بالبراغماتية في التعامل مع تمدد السلطة السعودية-الوهابية."
+    }
+  }
+}
+,{
+  "id": "p_saad_al_abdullah_constitution_2009",
+  "thumbnail": "assets/covers/30.pdf",
+  "pdf": "files/30.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "طروس عبدالجليل",
+  "year": 2009,
+  "venue": "مجلة المؤرخ المصري – دراسات وبحوث في التاريخ والحضارة، قسم التاريخ، جامعة القاهرة",
+  "keywords": [
+    "Kuwait",
+    "HISTORY OF KUWAIT",
+    "Sheikh Saad Al-Abdullah",
+    "Constitution",
+    "Parliamentary Life",
+    "Democratization",
+    "Political Leadership",
+    "Modernization"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Sheikh Saad Al-Abdullah: From Drafting the Constitution to Living the Constitution",
+      "abstract": "This study portrays Sheikh Saad Al-Abdullah as a statesman who combined principled leadership with popular appeal. Focusing on his parliamentary engagement and constitutional legacy, it examines his role in shaping Kuwait’s democratic culture, from participation in the drafting of the 1962 Constitution to protecting and practicing its provisions in public life. The paper highlights his contributions to institution-building, constitutionalism, and modernization, arguing that his approach advanced political participation and reinforced the rule of law."
+    },
+    "ar": {
+      "title": "الشيخ سعد العبد الله: من صياغة الدستور إلى معايشة الدستور",
+      "abstract": "تُقدّم الدراسة الشيخ سعد العبد الله بوصفه قائدًا قدّم نموذجًا مميزًا للقيادة السياسية الواعية والمحبوبة. وتكتفي بتسليط الضوء على جانب من حياته السياسية يتمثل في معايشته للحياة النيابية ودوره في ترسيخ مفهوم الديمقراطية وبناء مؤسساتها، ومشاركته في صياغة دستور الكويت عام 1962 وحماية مبادئه وتفعيلها في الواقع العملي. وتبرز الدراسة إسهاماته في التحديث المؤسسي وترسيخ سيادة القانون وتعزيز المشاركة السياسية."
+    }
+  }
+}
+,{
+  "id": "p_mubarak_russian_british_interests_1896_1904_2010",
+  "thumbnail": "assets/covers/31.pdf",
+  "pdf": "files/31.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2010,
+  "venue": "المجلة العربية للعلوم الإنسانية - جامعة الكويت",
+  "keywords": [
+    "Kuwait",
+    "HISTORY OF KUWAIT",
+    "Mubarak Al-Sabah",
+    "Russian Policy",
+    "British Interests",
+    "Gulf Geopolitics",
+    "Great Game",
+    "1896–1904"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Sheikh Mubarak between Russian Aspirations and British Interests in Kuwait (1896–1904)",
+      "abstract": "The article analyzes Russian approaches toward Kuwait at the turn of the twentieth century, when Kuwait’s strategic position drew the attention of competing imperial powers. It outlines the broader history of Russian activity in the Gulf, surveys early Russian attempts to enter Kuwait through proposed projects, and assesses Britain’s response and the implications for its regional influence. The study argues that Kuwait’s geographic and economic importance decisively shaped both Russian initiatives and British countermeasures during 1896–1904."
+    },
+    "ar": {
+      "title": "الشيخ مبارك بين التطلعات الروسية والمصالح البريطانية في الكويت (1896–1904)",
+      "abstract": "تتناول الدراسة التحركات الروسية تجاه الكويت في أواخر القرن التاسع عشر ومطلع العشرين، مع تزايد الأهمية الاستراتيجية لموقع الكويت واهتمام القوى الاستعمارية الكبرى بها. تقدم خلفية عن النشاط الروسي في الخليج، وتعرض المحاولات الأولى لدخول الروس إلى الكويت عبر مشاريعهم المختلفة، كما ترصد موقف الحكومة البريطانية من تلك التحركات وآثارها على نفوذها في المنطقة. وتؤكد أن الأهمية الجغرافية والاقتصادية للكويت أسهمت في توجيه مسار التطلعات الروسية وإجراءات بريطانيا المضادة خلال الفترة 1896–1904."
+    }
+  }
+},{
+  "id": "p_soviet_kuwait_iraq_crisis_1961_2014",
+  "thumbnail": "assets/covers/32.pdf",
+  "pdf": "files/32.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2014,
+  "venue": "مجلة المؤرخ المصري - جامعة القاهرة",
+  "keywords": [
+    "Kuwait",
+    "HISTORY OF KUWAIT",
+    "Soviet Union",
+    "Iraq-Kuwait Crisis 1961",
+    "Cold War",
+    "International Relations",
+    "United Nations",
+    "British Influence"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The Soviet Union and the Kuwait–Iraq Crisis of 1961",
+      "abstract": "This study examines Soviet policy toward Kuwait during the 1961 crisis, when Iraq under Abd al-Karim Qasim laid claims to Kuwait’s sovereignty. It explores the dynamics of Cold War politics, emphasizing the Soviet Union’s hostile stance in the UN Security Council, its alignment with Iraq, and its use of the veto to block Kuwait’s admission to the United Nations. The analysis argues that Moscow’s position was less about Kuwait itself than about countering British and American influence in the Gulf. The paper also traces the post-crisis shift, particularly after the 1963 coup in Iraq, when the Soviets recalibrated and formally recognized Kuwait, later supporting its UN membership and diplomatic normalization."
+    },
+    "ar": {
+      "title": "الاتحاد السوفيتي والأزمة الكويتية العراقية - 1961",
+      "abstract": "تبحث هذه الدراسة الموقف السوفيتي من أزمة الكويت عام 1961 حينما طالب عبد الكريم قاسم بضمها للعراق، مسلطة الضوء على طبيعة التفاعلات في سياق الحرب الباردة. وتوضح الدراسة كيف تبنى السوفييت موقفًا عدائيًا متشددًا في مجلس الأمن، ووقفوا إلى جانب العراق، واستخدموا حق النقض الفيتو لتعطيل انضمام الكويت إلى الأمم المتحدة. وترى الدراسة أن هذا الموقف كان موجهًا بالأساس ضد بريطانيا والولايات المتحدة أكثر من كونه ضد الكويت ذاتها. كما ترصد التحول الذي طرأ بعد انقلاب عبد السلام عارف عام 1963، حيث اعترفت موسكو رسميًا بالكويت وأيدت انضمامها للأمم المتحدة ودعمت مسار العلاقات الدبلوماسية معها."
+    }
+  }
+},{
+  "id": "p_kuwait_fall_of_arabistan_1915_1925_2014",
+  "thumbnail": "assets/covers/34.pdf",
+  "pdf": "files/34.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2014,
+  "venue": "مركز دراسات الخليج والجزيرة العربية – مجلس النشر العلمي – جامعة الكويت",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Kuwait",
+    "Arabistan",
+    "Sheikh Khazal",
+    "British Policy",
+    "Persia/Iran",
+    "Pahlavi Era",
+    "Oil History",
+    "Gulf Geopolitics"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwait and the Fall of Arabistan (1915–1925)",
+      "abstract": "The study examines Kuwait’s position toward the collapse of Arabistan under Sheikh Khazal between 1915 and 1925. It reconstructs Kuwait–Arabistan relations in this decade, the hesitation of Sheikh Ahmad Al-Jaber after the Persian takeover and Khazal’s arrest, and the implications of Britain’s retreat from prior assurances to protect Arabistan’s autonomy. By situating these developments within the region’s shifting geopolitics—including early oil discoveries and the Qajar-to-Pahlavi transition—the paper explains how Kuwait assessed risks, calibrated responses, and managed ties with neighboring powers."
+    },
+    "ar": {
+      "title": "الكويت وسقوط عربستان (1915–1925)",
+      "abstract": "تبحث الدراسة موقف الكويت من سقوط عربستان في عهد أميرها الشيخ خزعل، وتعرض واقع العلاقة بين الكويت وعربستان خلال الفترة 1915–1925 ومسارها وأثرها على الإمارتين. وتناقش تردد الشيخ أحمد الجابر في اتخاذ قرارات سياسية عقب استيلاء الفرس على عربستان واعتقال الشيخ خزعل ونقله إلى طهران، كما تتناول أسباب تخلي بريطانيا عنه رغم تعهداتها السابقة بالمحافظة على أوضاع عربستان وضمان استقلالها. وتضع الدراسة هذه التحولات في سياق التغيرات الإقليمية الأوسع، من اكتشاف النفط المبكر إلى سقوط الحكم القاجاري وقيام الحكم البهلوي، مبيّنة كيفية مقاربة الكويت لتوازنات القوة المجاورة."
+    }
+  }
+},{
+  "id": "p_kuwait_saudi_relations_2013",
+  "thumbnail": "assets/covers/35.pdf",
+  "pdf": "files/35.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2013,
+  "venue": "مجلة المؤرخ المصري - كلية الآداب - جامعة القاهرة",
+  "keywords": [
+    "Kingdom of Saudi Arabia",
+    "Arabian/Persian Gulf Studies",
+    "HISTORY OF KUWAIT",
+    "Saudi Arabian History",
+    "First Saudi State",
+    "Second Saudi State",
+    "Third Saudi State",
+    "Regional Politics"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Kuwaiti-Saudi Relations: Influence, Constants, and Conflicts of Interest",
+      "abstract": "This study examines the historical trajectory of relations between Kuwait and the Saudi states, focusing on the interplay of shared constants and competing interests. It traces Kuwait’s interactions with the First Saudi State, its exposure to the internal conflicts of the Second Saudi State, and its engagement with the revival of the Saudi project during the early 20th century, particularly with the reestablishment of the Third Saudi State in 1902. The paper highlights both cooperation and rivalry, illustrating how geopolitical interests, tribal dynamics, and regional aspirations shaped the evolution of Kuwaiti-Saudi relations."
+    },
+    "ar": {
+      "title": "العلاقات الكويتية السعودية – تأثير وتأثر بين الثوابت وصراع المصالح",
+      "abstract": "تتناول هذه الدراسة مسار العلاقات بين الكويت والدول السعودية عبر التاريخ، من خلال رصد التوازن بين الثوابت المشتركة وصراع المصالح. فتستعرض علاقة الكويت بالدولة السعودية الأولى، وتأثرها بالصراعات الداخلية للدولة السعودية الثانية، وصولاً إلى مرحلة إعادة بناء الدولة السعودية الثالثة عام 1902. وتوضح الدراسة أوجه التعاون والتنافس في آن واحد، مبرزة كيف أسهمت الاعتبارات الجيوسياسية والديناميات القبلية والطموحات الإقليمية في صياغة مسار العلاقات الكويتية-السعودية."
+    }
+  }
+},{
+  "id": "p_citizenship_political_participation_kuwait_assembly_36",
+  "thumbnail": "assets/covers/36.pdf",
+  "pdf": "files/36.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": null,
+  "venue": "",
+  "keywords": [
+    "HISTORY OF KUWAIT",
+    "Citizenship",
+    "Political Participation",
+    "National Assembly",
+    "Al Sabah",
+    "Democratization",
+    "Constitutional Politics",
+    "Kuwaiti Politics"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Citizenship and Political Participation in the State of Kuwait: The Case of the National Assembly",
+      "abstract": "This study addresses why, despite a constitutionally guaranteed representative system, Kuwait’s experience with democracy over four decades has produced a model characterized by limited citizen eligibility to participate and an often-ineffective National Assembly—frequently suspended and unable to check the executive. Focusing on 1963–1996, it analyzes how the Assembly functions, its relationship with the Al Sabah ruling family and the executive, and the mechanisms through which executive dominance over society—and consequently over parliament—has been maintained."
+    },
+    "ar": {
+      "title": "المواطنة والمشاركة السياسية في دولة الكويت: حالة مجلس الأمة",
+      "abstract": "تتناول هذه الدراسة سؤالًا محوريًا: لماذا وكيف، على الرغم من وجود نظام تمثيلي مكفول دستوريًا في الكويت، انتهى مسار التجربة الديمقراطية خلال أربعة عقود إلى نموذج يقتصر فيه حق المشاركة على عدد محدود من المواطنين، ويظهر فيه مجلس الأمة ضعيف الفاعلية بسبب تعليقاته المتكررة وعجزه عن ممارسة الرقابة والتوازن على السلطة التنفيذية؟ تركز الدراسة على فترة 1963–1996، فتفكك آليات عمل مجلس الأمة وعلاقته بأسرة آل صباح والسلطة التنفيذية، وتعرض الوسائل التي حافظت بها السلطة التنفيذية على هيمنتها على المجتمع ومن ثم على البرلمان."
+    }
+  }
+}
+,{
+  "id": "p_history_of_kuwait_emirate_state_2021",
+  "thumbnail": "assets/covers/37.pdf",
+  "pdf": "files/37.pdf",
+  "doi": "https://doi.org/1021820",
+  "link": "https://doi.org/1021820",
+  "authors": "",
+  "year": 2021,
+  "venue": "e-raf.aspdkw.com",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Kuwait",
+    "Al-Utub Clan",
+    "Political History",
+    "Sociology",
+    "International Relations",
+    "Identity",
+    "State Formation"
+  ],
+  "i18n": {
+    "en": {
+      "title": "The History of Kuwait: The Emirate and the State",
+      "abstract": "This book presents a large-scale historical study of Kuwait, balancing classical narrative with contemporary research. It revisits early historiography while integrating academic scholarship, offering readers a comprehensive view of Kuwait’s history. The study covers political, social, and international dimensions—from the foundation of Kuwait by the Al-Utub clan, through its rulers, administrative structures, and relations with neighboring empires, to its independence and the Iraqi invasion of 1990. The book bridges history, politics, and sociology, emphasizing Kuwait’s evolving identity, sovereignty, and modernization. Winner of the State of Kuwait Award in the field of history."
+    },
+    "ar": {
+      "title": "تاريخ الكويت: الإمارة والدولة",
+      "abstract": "يُعد هذا الكتاب دراسة تاريخية واسعة النطاق عن الكويت، إذ يسعى إلى الموازنة بين الرؤية البحثية والسرد التقليدي من خلال مراجعة الأعمال التاريخية المبكرة وإدماج الدراسات الأكاديمية الحديثة. يغطي الكتاب مختلف الجوانب السياسية والاجتماعية والعلاقات الدولية، بدءًا من تأسيس الكويت على يد العتوب، مرورًا بطبيعة حكمها وأمرائها وعلاقاتها مع الإمبراطوريات المجاورة، وصولًا إلى الاستقلال وغزو العراق عام 1990. كما يسلط الضوء على الهوية والسيادة الكويتية وتطورها في سياق التحديث. وقد حاز الكتاب جائزة دولة الكويت في مجال التاريخ."
+    }
+  }
+}
+,
+{
+  "id": "p_citizenship_political_participation_kuwait_assembly_1963_1996_2020",
+  "thumbnail": "assets/covers/38.pdf",
+  "pdf": "files/38.pdf",
+  "doi": "",
+  "link": "",
+  "authors": "",
+  "year": 2020,
+  "venue": "Journal of Oriental and African Studies 29 (2020), Athens, Greece",
+  "keywords": [
+    "Middle East",
+    "HISTORY OF KUWAIT",
+    "Citizenship",
+    "Political Participation",
+    "National Assembly",
+    "Democratization",
+    "Al Sabah",
+    "Christian Minorities in Kuwait"
+  ],
+  "i18n": {
+    "en": {
+      "title": "Citizenship and Political Participation in the State of Kuwait: The Case of the National Assembly (1963–1996)",
+      "abstract": "Published in the Journal of Oriental and African Studies (2020), this article revisits Kuwait’s experiment with parliamentary democracy from 1963 to 1996, focusing on citizenship, representation, and political participation. It examines how restrictions on suffrage limited participation to a small portion of society, undermining the inclusiveness of Kuwait’s democratic institutions. The paper highlights the frequent suspensions of the National Assembly, its fragile relationship with the Al Sabah executive authority, and the mechanisms through which ruling elites maintained dominance. The study also notes how minority groups, including Christian Kuwaitis, fit within this broader framework of citizenship and political rights."
+    },
+    "ar": {
+      "title": "المواطنة والمشاركة السياسية في دولة الكويت: حالة مجلس الأمة (1963–1996)",
+      "abstract": "نُشر هذا البحث في مجلة دراسات الشرق الأدنى وأفريقيا عام 2020، ويعيد النظر في تجربة الكويت البرلمانية بين 1963 و1996 من زاوية المواطنة والتمثيل والمشاركة السياسية. ويبين كيف أن القيود على حق الانتخاب قصرت المشاركة على فئة محدودة من المجتمع، مما أضعف شمولية المؤسسات الديمقراطية. كما يبرز تعليق مجلس الأمة المتكرر وعلاقته المتوترة مع السلطة التنفيذية ممثلة في آل صباح، والآليات التي حافظت من خلالها النخبة الحاكمة على هيمنتها. ويتطرق البحث كذلك إلى موقع الأقليات، بما فيها المسيحيون الكويتيون، ضمن إطار المواطنة والحقوق السياسية."
+    }
+  }
+}
+
+
+
+
+
+
+
+
+]
+,  "thesis": [],
   "drafts": []
 }

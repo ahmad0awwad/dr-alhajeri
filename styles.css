@@ -5,6 +5,10 @@
   --radius:14px; --r-sm:10px; --shadow-1:0 6px 24px rgba(15,63,73,.18),0 2px 6px rgba(15,63,73,.08);
   --shadow-2:0 10px 34px rgba(15,63,73,.22),0 4px 10px rgba(15,63,73,.12);
   --maxw:1100px; --g:16px;
+    --brand-800: #144fc4; /* or any color you want */
+       --brand-800: #144fc4;                 /* your exact color */
+  --brand-800-hover: #1a5ae0; 
+
 }
 @media (prefers-color-scheme:dark){
   :root{ --paper:#0a0f13; --ink-900:#e9eef5; --ink-700:#cfd7e5; --ink-500:#a4afc3;
@@ -14,9 +18,19 @@
 
 /* ============ base ============ */
 *{box-sizing:border-box}
-body{margin:0;font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;color:var(--ink-900);
-     background:radial-gradient(1200px 800px at 10% -10%,var(--brand-100),transparent 60%),linear-gradient(#f8fbfc,#f7fbfd);}
+body {
+  margin: 0;
+  font: 16px/1.65 'Tajawal', 'Cairo';
+  color: var(--ink-900);
+  background:
+    radial-gradient(1200px 800px at 10% -10%, var(--brand-100), transparent 60%),
+    linear-gradient(#f8fbfc, #f7fbfd);
+}
 
+/* If page direction is RTL (Arabic) */
+html[dir="rtl"] body {
+  font-family: 'Tajawal', 'Cairo', 'Noto Naskh Arabic', sans-serif;
+}
 /* helpers */
 .muted{color:var(--ink-500)}
 .pill{border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.2);backdrop-filter:blur(8px);color:#fff;
@@ -25,12 +39,149 @@ body{margin:0;font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Ro
 .pill.active{background:#fff;color:var(--brand-800)}
 
 /* ============ hero/banner ============ */
-.hero{position:relative;margin:0 0 24px;background:linear-gradient(180deg,var(--brand-900),var(--brand-800));color:#fff;box-shadow:var(--shadow-1)}
-.banner{position:relative;height:220px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.15)}
-.banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9) brightness(.85) contrast(1.05)}
-.lang-switch{position:absolute;inset-inline-start:16px;inset-block-start:14px;display:flex;gap:8px}
+/* HERO only as tall as the banner (no white area) */
+.hero{
+  position: relative;
+  margin: 0 0 24px;
+  background: transparent;
+  color: #fff;
+  box-shadow: var(--shadow-1);
+  padding-bottom: 0;                 /* ⛔️ remove the gap that showed white */
+}
 
-.hero-inner{max-width:var(--maxw);margin:0 auto;padding:14px 16px 20px}
+/* Banner image */
+.banner{
+  position: relative;
+  height: 320px;                     /* pick a height you like */
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.banner-img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: saturate(.9) brightness(.85) contrast(1.05);
+}
+
+.hero .hero-inner{
+  position: relative;
+  left: auto; bottom: auto; transform: none;
+  z-index: 2;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 12px 16px 0;
+}
+
+/* If you previously added big top margin to content for overlap, flatten it */
+#content{ max-width: var(--maxw); margin: 0 auto 40px; padding: 0 16px; }
+
+/* ========== LEFT1: glass column on banner ========== */
+.hero--left1 .banner{height:320px}
+.hero--left1 .hero-inner{
+  position:absolute; inset:0; display:flex; align-items:center;
+  padding:0 16px;
+}
+.hero--left1 .brand-col{
+  width:min(320px,42vw);
+  background:rgba(0,0,0,.28);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 12px 32px rgba(0,0,0,.35);
+  display:flex; flex-direction:column; align-items:flex-start;
+}
+.hero--left1 .avatar{
+  width:120px;height:120px;object-fit:contain;
+  background:#fff;border-radius:12px;border:6px solid #fff;
+  box-shadow:0 12px 28px rgba(0,0,0,.28);
+}
+.hero--left1 .masthead{
+  margin:10px 0 0; color:#fff;
+  font-size:clamp(20px,2.8vw,30px); line-height:1.25;
+  text-shadow:0 3px 10px rgba(0,0,0,.4);
+}
+@media (max-width:680px){
+  .hero--left1 .brand-col{width:100%; align-items:center; text-align:center}
+}
+/* ========== LEFT2: white card under banner ========== */
+.hero--left2 .banner{height:300px}
+.hero--left2 .hero-inner{
+  position:relative; max-width:var(--maxw); margin:0 auto; padding:0 16px;
+  transform:translateY(0);
+}
+.hero--left2 .brand-card{
+  margin-top:-20px;           /* subtle overlap, still safe */
+  width:min(360px,100%);
+  background:#fff; color:var(--ink-900);
+  border:1px solid rgba(19,81,93,.12);
+  border-radius:16px; padding:16px;
+  box-shadow:var(--shadow-2);
+  display:flex; flex-direction:column; align-items:flex-start;
+}
+.hero--left2 .avatar{
+  width:120px;height:120px;object-fit:contain;background:#fff;
+  border-radius:12px;border:6px solid var(--brand-100);
+  box-shadow:0 10px 24px rgba(0,0,0,.16);
+}
+.hero--left2 .masthead{
+  margin:10px 0 0; color:var(--brand-900);
+  font-size:clamp(22px,3vw,32px); line-height:1.25;
+  text-shadow:none;
+}
+@media (max-width:600px){
+  .hero--left2 .brand-card{align-items:center; text-align:center}
+}
+/* ========== LEFT3: masthead above banner ========== */
+.hero--left3 .hero-inner{
+  position:relative; max-width:var(--maxw); margin:0 auto; padding:12px 16px 0;
+}
+.hero--left3 .masthead-wrap{
+  display:flex; align-items:flex-start; gap:16px;
+}
+.hero--left3 .brand-stack{
+  display:flex; flex-direction:column; align-items:flex-start;
+}
+.hero--left3 .avatar{
+  width:100px;height:100px;object-fit:contain;background:#fff;
+  border-radius:12px;border:6px solid var(--brand-100);
+  box-shadow:0 10px 24px rgba(0,0,0,.16);
+}
+.hero--left3 .masthead{
+  margin:8px 0 0; color:var(--brand-900);
+  font-size:clamp(22px,3vw,32px); line-height:1.25;
+}
+.hero--left3 .banner{height:280px; margin-top:10px}
+@media (max-width:640px){
+  .hero--left3 .brand-stack{align-items:center; text-align:center}
+}
+
+
+/* Keep language switch on the banner */
+.lang-switch{
+  position: absolute;
+  inset-inline-start: 16px;
+  inset-block-start: 14px;
+  display: flex; gap: 8px;
+}
+
+/* Make room for the overhanging content BELOW the header instead */
+#content{
+  max-width: var(--maxw);
+  margin: 90px auto 40px;            /* 👈 creates space for the overhang */
+  padding: 0 16px;
+}
+
+
+/* keep language switch pinned on the banner */
+.lang-switch{
+  position:absolute; inset-inline-start:16px; inset-block-start:14px;
+  display:flex; gap:8px;
+}
+
+
+
+
 
 /* ID row: mobile-first stack → side-by-side on larger screens */
 .id-row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
@@ -47,14 +198,35 @@ body{margin:0;font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Ro
 .chips .chip{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;
              background:#fff;color:var(--brand-800);border:1px solid rgba(19,81,93,.18);box-shadow:0 1px 2px rgba(0,0,0,.06)}
 @media (prefers-color-scheme:dark){ .chips .chip{background:#10161b;color:#e8f4f7;border-color:#1e2b31} }
+.tabs button:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.18);
+  color: var(--brand-800-hover);
+}
+.tabs button.active{
+  background: #fff;
+  color: var(--brand-800);
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+/* ensure active stays the same even when hovered */
+.tabs button.active:hover{
+  background: #fff;
+  color: var(--brand-800);
+}
 
-/* tabs */
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.tabs button{appearance:none;border:0;padding:10px 14px;border-radius:999px;cursor:pointer;background:rgba(255,255,255,.12);
-             color:#fff;letter-spacing:.2px;transition:transform .15s, background .2s, box-shadow .2s}
-.tabs button:hover{transform:translateY(-1px);background:rgba(255,255,255,.18)}
-.tabs button.active{background:#fff;color:var(--brand-800);box-shadow:0 6px 18px rgba(0,0,0,.15)}
-
+/* ===== Under-hero tab bar ===== */
+.tabs-under-hero button{
+  color: var(--brand-800);              /* base text = brand */
+}
+.tabs-under-hero button:hover{
+  color: var(--brand-800-hover);
+}
+.tabs-under-hero button.active{
+  color: var(--brand-800);
+}
+.tabs-under-hero button.active::after{
+  background: var(--brand-800);         /* keep underline on-brand */
+}
 /* main/cards */
 #content{max-width:var(--maxw);margin:0 auto 40px;padding:0 16px}
 .tab-panel{display:none}
@@ -142,8 +314,12 @@ html.rtl .thumb{order:2}
   max-width:var(--maxw); margin:0 auto; padding:28px 16px 34px; text-align:center;
 }
 .footer-mark{
-  width:90px; height:auto; margin:0 auto 12px; filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));
-}
+  width: 180px;              /* adjust size */
+  height: 180px;             /* same as width for perfect circle */
+  object-fit: cover;         /* ensure it fills frame */
+  border-radius: 50%;        /* makes it circular */
+  border: 6px solid #f4c97a; /* optional: golden border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25); /* nice shadow */}
 .footer-tagline{
   margin:0 auto 14px; max-width:860px; font-size:17px; line-height:1.6;
   text-wrap:balance;
@@ -356,3 +532,607 @@ html.rtl .footer-links{direction:rtl}
     height: 30px;
   }
 }
+/* === Masthead base === */
+.masthead-inner{ max-width:var(--maxw); margin:0 auto; padding:12px 16px; }
+.mh-avatar{
+  width:100px; height:100px; object-fit:contain; background:#fff;
+  border-radius:12px; border:6px solid var(--brand-100);
+  box-shadow:0 10px 24px rgba(0,0,0,.16);
+}
+.mh-title{
+  margin:8px 0 0; color:var(--brand-900);
+  font-size:clamp(22px,3vw,32px); line-height:1.25;
+}
+
+/* === Variant: top masthead bar === */
+.masthead--top .masthead-inner{ padding-bottom:0; }
+.masthead--top .brand-stack{ display:flex; flex-direction:column; align-items:flex-start; }
+@media (max-width:640px){ .masthead--top .brand-stack{ align-items:center; text-align:center; } }
+/* === Variant: under-banner card === */
+.masthead--card .brand-card{
+  width:min(380px,100%);
+  background:#fff; color:var(--ink-900);
+  border:1px solid rgba(19,81,93,.12);
+  border-radius:16px; padding:16px;
+  box-shadow:var(--shadow-2);
+  display:flex; flex-direction:column; align-items:flex-start;
+  margin-top:-18px;   /* subtle overlap illusion but stays outside header */
+}
+.masthead--card .mh-title{ text-shadow:none; }
+@media (max-width:600px){
+  .masthead--card .brand-card{ align-items:center; text-align:center; margin-top:8px; }
+}
+/* === Variant: centered strip under banner === */
+.masthead--strip{ background:linear-gradient(180deg,#ffffff,#f7fbfd); border-top:1px solid rgba(0,0,0,.06); }
+.strip-inner{ padding:18px 16px; }
+.brand-stack.center{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+.masthead--strip .mh-avatar{ border-color:var(--brand-100); }
+.strip2 .brand-row{ display:flex; align-items:center; gap:16px; }
+.strip2 .mh-avatar{ width:100px; height:100px; border-radius:50%; border:5px solid var(--brand-300); }
+.strip2 .mh-title{ margin:0; color:var(--brand-900); font-size:clamp(22px,2.8vw,32px); }
+.strip2 .mh-sub{ margin:4px 0 0; font-size:15px; color:var(--ink-700); }
+.strip3{ background:var(--brand-100); }
+/* Bigger badge + bigger logo */
+.strip3 .logo-badge{
+  width:200px; height:200px;   /* was 160px */
+}
+.strip3 .mh-avatar{
+  width:200px; height:200px;   /* was 90px */
+}
+
+.strip3 .mh-title{ color:var(--brand-800); }
+/* Just override the small size */
+.strip4 .mh-avatar.small{
+  width:140px; height:140px;   /* was 80px */
+  border:6px solid var(--brand-100); /* thicker border looks better */
+}
+.strip4 .mh-title.accent{
+  position:relative; display:inline-block;
+}
+.strip4 .mh-title.accent::after{
+  content:""; display:block; height:4px; width:60%;
+  margin:6px auto 0; background:var(--brand-600);
+  border-radius:2px;
+}
+.strip5 .brand-grid{
+  display:grid; grid-template-columns:120px 1fr; gap:20px; align-items:center;
+}
+.strip5 .mh-avatar.square{ border-radius:12px; border:5px solid var(--brand-100); }
+.strip5 .mh-title{ margin:0 0 6px; font-size:clamp(24px,3vw,34px); }
+@media(max-width:640px){
+  .strip5 .brand-grid{ grid-template-columns:1fr; text-align:center; }
+}
+
+/* Tabs bar just below hero/masthead 00000*/
+/* .tabs-under-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 14px 16px;
+  background: #fff; 
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+  position: sticky;   
+  top: 0;
+  z-index: 50;
+}
+
+.tabs-under-hero button {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: 600 15px/1.4 ui-sans-serif, system-ui, sans-serif;
+  color: var(--brand-800);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--brand-100);
+  transition: background .2s, color .2s, transform .15s;
+}
+
+.tabs-under-hero button:hover {
+  background: var(--brand-300);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.tabs-under-hero button.active {
+  background: var(--brand-800);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+} */
+
+/* tabs1 */
+/* .tabs-under-hero {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: var(--brand-100);
+}
+
+.tabs-under-hero button {
+  background: #fff;
+  border: 1px solid rgba(19,81,93,.15);
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--brand-800);
+  transition: all .2s;
+}
+
+.tabs-under-hero button:hover {
+  background: var(--brand-300);
+  color: #fff;
+}
+
+.tabs-under-hero button.active {
+  background: var(--brand-800);
+  color: #fff;
+  box-shadow: var(--shadow-1);
+} */
+/* tab2 */
+.tabs-under-hero {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+  background: #fff;
+  padding: 10px 0;
+}
+
+.tabs-under-hero button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: 600 16px/1.4 ui-sans-serif, system-ui;
+  color:blue;
+  padding: 8px 4px;
+  position: relative;
+}
+
+.tabs-under-hero button.active {
+  color:#144fc4;
+}
+
+.tabs-under-hero button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; left: 0; right: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--brand-600);
+}
+:root {
+  --logo-size: 130px;          /* larger logo on phone */
+  --stripe-height: 90px;       /* taller stripe */
+  --logo-offset: 14px;         /* distance from edge */
+  --brand-500: #45a7ba;
+  --brand-700: #17697a;
+  --stripe-text: #fff;
+}
+
+/* row */
+.strip-splash .splash-row {
+  position: relative;
+  min-height: max(var(--logo-size), var(--stripe-height));
+  display: flex;
+  align-items: center;
+}
+
+/* stripe comes out from the logo */
+.strip-splash .splash-row::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(var(--logo-offset) + (var(--logo-size) / 2));
+  right: 0;
+  height: var(--stripe-height);
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
+  border-top-left-radius: var(--stripe-height);
+  border-bottom-left-radius: var(--stripe-height);
+  z-index: 0;
+}
+
+/* logo */
+.strip-splash .logo-splash {
+  position: relative;
+  margin-left: var(--logo-offset);
+  width: var(--logo-size);
+  height: var(--logo-size);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.strip-splash .logo-splash img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* title + subtitle */
+.strip-splash .title-side {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  min-height: var(--stripe-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex: 1;
+}
+.strip-splash .mh-title {
+  margin: 0;
+  color: var(--stripe-text);
+  font-size: clamp(2px, 3vw, 32px);
+  line-height: 1.2;
+}
+.strip-splash .mh-sub {
+  margin: 4px 0 0;
+  font-size: clamp(14px, 4vw, 18px);
+  color: rgba(255,255,255,0.9);
+}
+/* Base stripe (LTR and RTL) */
+.strip-splash .splash-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: max(var(--logo-size), var(--stripe-height));
+}
+
+.strip-splash .splash-row::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(var(--logo-offset) + (var(--logo-size) / 2));
+  right: 0;
+  height: var(--stripe-height);
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
+  border-top-left-radius: var(--stripe-height);
+  border-bottom-left-radius: var(--stripe-height);
+  z-index: 0;
+}
+/* stripe always flows left → right, no flip */
+.strip-splash .splash-row::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(var(--logo-offset) + (var(--logo-size) / 2));
+  right: 0;
+  height: var(--stripe-height);
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, var(--brand-500), var(--brand-700));
+  border-top-left-radius: var(--stripe-height);
+  border-bottom-left-radius: var(--stripe-height);
+  z-index: 0;
+}
+
+/* logo always on left */
+.strip-splash .logo-splash {
+  position: relative;
+  margin-left: var(--logo-offset);
+  width: var(--logo-size);
+  height: var(--logo-size);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.strip-splash .logo-splash img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* text area */
+.strip-splash .title-side {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  min-height: var(--stripe-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  text-align: left; /* default LTR */
+}/* Default English font */
+.strip-splash .mh-title,
+.strip-splash .mh-sub {
+  font-family: 'Cairo', 'Tajawal', 'Noto Naskh Arabic', sans-serif;
+}
+
+/* Force a nicer Arabic font when page is RTL */
+html[dir="rtl"] .strip-splash .mh-title,
+html[dir="rtl"] .strip-splash .mh-sub {
+  font-family: 'Tajawal', 'Cairo', 'Noto Naskh Arabic', sans-serif;
+}
+
+.strip-splash .mh-sub {
+  margin: 4px 0 0;
+  font-size: clamp(14px, 4vw, 18px);
+  color: rgba(255,255,255,0.9);
+}
+
+/* ✅ RTL: only flip text alignment */
+html[dir="rtl"] .strip-splash .title-side {
+  text-align: right;
+}
+/* Make .footer-inner a positioning context */
+.footer-inner {
+  position: relative;                /* add */
+  padding-bottom: 64px;              /* add: room so logo doesn’t overlap text */
+}
+
+/* Pin logo to bottom-left */
+.footer-logo-link {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 2;
+}
+
+/* .footer-mark {
+  max-height: 56px;                 
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.35));
+} */
+
+/* Optional: on small screens, shrink a bit */
+@media (max-width: 480px) {
+  .footer-mark { max-height: 46px; }
+}
+
+/* If you want the logo to flip to bottom-right in Arabic (RTL), add this. 
+   Remove it if you want it to STAY bottom-left for all languages. */
+/* RTL fixes for Arabic layout */
+html[dir="rtl"] .tab-panel .card {
+  grid-template-columns: 1fr var(--pub-cover);
+}
+
+html[dir="rtl"] .tab-panel .item-title,
+html[dir="rtl"] .tab-panel .meta {
+  text-align: right;
+}
+
+html[dir="rtl"] .tab-panel .thumb {
+  justify-self: end;
+}
+
+/* ===== Bigger publication cards & covers (drop-in override) ===== */
+
+/* Tweak these if you want even bigger */
+:root{
+  --pub-cover: 150px;        /* desktop cover size */
+  --pub-grid-min: 380px;     /* min card width in the grid */
+}
+
+/* Larger grid for publication tabs */
+#books.tab-panel.active,
+#papers.tab-panel.active,
+#thesis.tab-panel.active,
+#drafts.tab-panel.active{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--pub-grid-min), 1fr));
+  gap: 20px;
+}
+
+/* Bigger card layout & spacing just for tab panels */
+.tab-panel .card{
+  grid-template-columns: var(--pub-cover) 1fr; /* big cover on the left */
+  gap: 16px;
+  padding: 18px;
+}
+
+/* Larger cover image */
+.tab-panel .thumb{
+  width: var(--pub-cover);
+  height: var(--pub-cover);
+  border-radius: 12px;
+  object-fit: cover;          /* nicely fills */
+  background: #f3f6f7;
+}
+
+/* Readable text */
+.tab-panel .item-title{ font-size: clamp(18px, 2vw, 22px); line-height: 1.35; }
+.tab-panel .meta{ font-size: 14px; }
+
+/* Mobile: stack cover on top with book-ish aspect ratio */
+@media (max-width: 640px){
+  #books.tab-panel.active,
+  #papers.tab-panel.active,
+  #thesis.tab-panel.active,
+  #drafts.tab-panel.active{
+    grid-template-columns: 1fr;
+  }
+  .tab-panel .card{ grid-template-columns: 1fr; }
+  .tab-panel .thumb{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;      /* tall book cover look */
+  }
+}
+
+/* Optional: go XL on wide screens */
+@media (min-width: 1100px){
+  :root{ --pub-cover: 180px; }
+}
+/* One card per row for publication tabs */
+#books.tab-panel.active,
+#papers.tab-panel.active,
+#thesis.tab-panel.active,
+#drafts.tab-panel.active{
+  display: grid;
+  grid-template-columns: 1fr !important; /* override the auto-fill rule above */
+}
+/* ===== Social contact strip ===== */
+.contact-strip{
+  margin-block: 24px;
+}
+
+.contact-subtitle{
+  font-size: clamp(18px, 2.5vw, 22px);
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+/* ✅ Base = phone first */
+.contact-grid {
+  --icon-size: 40px;   /* default small for phones */
+  --icon-gap: 16px;
+
+  display: flex;
+  gap: var(--icon-gap);
+  align-items: center;
+  justify-content: flex-start; /* or space-between */
+  flex-wrap: nowrap;
+}
+
+.contact-link {
+  display: inline-flex;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+  outline: none;
+}
+
+.contact-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hover/focus effects */
+.contact-link:hover,
+.contact-link:focus-visible {
+  transform: translateY(-1px) scale(1.04);
+  filter: brightness(1.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+/* 🖥️ Scale up on tablets/laptops */
+@media (min-width: 700px) {
+  .contact-grid {
+    --icon-size: 70px;
+    --icon-gap: 60px;
+  }
+}
+
+/* 🖥️ Even larger on wide desktops */
+@media (min-width: 1100px) {
+  .contact-grid {
+    --icon-size: 90px;
+    --icon-gap: 200px;
+  }
+}
+
+/* Dark mode polish */
+@media (prefers-color-scheme: dark) {
+  .contact-link:hover,
+  .contact-link:focus-visible {
+    box-shadow: 0 2px 12px rgba(0,0,0,.35);
+  }
+}
+
+/* RTL friendly */
+html[dir="rtl"] .contact-grid {
+  justify-content: flex-start; /* or flex-end if you want right-aligned */
+}
+/* ========== ABOUT: phone-first, no cards ========== */
+#about .about-grid{
+  display: grid;
+  grid-template-columns: 1fr;    /* phone: single column */
+  row-gap: 14px;
+  column-gap: 0;
+}
+
+/* section block with a separator BETWEEN items */
+#about .about-section{
+  padding-block: 10px 12px;
+  border-bottom: 1px dashed rgba(20,79,196,.18); /* bluish dashed rule */
+}
+#about .about-section:last-child{ border-bottom: 0; }
+
+/* bluish headers + small accent line */
+#about .about-subtitle{
+  margin: 0 0 6px;
+  font-weight: 800;
+  color: var(--brand-800, #144fc4); /* your blue */
+  letter-spacing: .2px;
+  font-size: clamp(16px, 1.6vw, 18px);
+  position: relative;
+}
+#about .about-subtitle::after{
+  content:"";
+  display:block;
+  width: 44px; height: 3px;
+  margin-top: 6px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand-600, #17697a), var(--brand-800, #144fc4));
+  opacity: .85;
+}
+
+/* readable lists with bluish markers */
+#about ul{ margin: 6px 0 0; padding-inline-start: 18px; }
+#about li{ margin: 6px 0; }
+#about li::marker{ color: var(--brand-600, #17697a); }
+
+/* Social section = last row, spans full width */
+#about .contact-strip{
+  margin-top: 16px;
+  grid-column: 1 / -1;      /* spans all columns when grid grows */
+}
+#about .contact-subtitle{
+  margin: 0 0 10px;
+  font-weight: 800;
+  color: var(--brand-800, #144fc4);
+}
+#about .contact-subtitle::after{
+  content:"";
+  display:block;
+  width: 44px; height: 3px;
+  margin-top: 6px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand-600, #17697a), var(--brand-800, #144fc4));
+  opacity: .85;
+}
+
+/* ========= Scale up to 2 columns (side-by-side) ========= */
+@media (min-width: 820px){
+  #about .about-grid{
+    grid-template-columns: 1fr 1fr;  /* two columns on tablets/desktop */
+    column-gap: 28px;
+    row-gap: 12px;
+    position: relative;
+  }
+  /* subtle vertical divider BETWEEN the two columns */
+  #about .about-grid::before{
+    content:"";
+    position:absolute;
+    top: 0; bottom: 0;
+    left: 50%;
+    width: 1px;
+    transform: translateX(-.5px);
+    background: linear-gradient(transparent, rgba(20,79,196,.16), transparent);
+    pointer-events: none;
+  }
+}
+
+/* ========= Dark mode polish ========= */
+@media (prefers-color-scheme: dark){
+  #about .about-section{
+    border-bottom-color: rgba(20,79,196,.28);
+  }
+  #about .about-grid::before{
+    background: linear-gradient(transparent, rgba(20,79,196,.28), transparent);
+  }
+}
+
+/* ========= RTL friendly (uses logical props) ========= */
+/* no special rules needed; the vertical divider is centered */
