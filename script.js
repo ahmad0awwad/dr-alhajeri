@@ -16,10 +16,20 @@ const translations = {
     explore: "Explore Publications",
     footerNote: "All rights reserved.",
     footerOwner: "Torous Media-IT",
-        roles: "Historian • Author • Educator",
-
+    roles: "Historian • Author • Educator",
     tagline: "Research that connects the Gulf’s past to its present—history that informs policy, culture, and society.",
-    empty: (k) => `No ${k} yet.`
+    empty: (k) => `No ${k} yet.`,
+
+    // About section labels
+    a_quals: "Academic Qualifications",
+    a_positions: "Academic & Administrative Positions",
+    a_volunteer: "Volunteer Service",
+    a_awards: "Academic Awards",
+    a_publications: "Selected Publications",
+    a_books: "Books",
+    a_articles: "Articles",
+    a_activity: "Research & Community Activities",
+    a_memberships: "Selected Memberships",
   },
   ar: {
     about: "النبذة",
@@ -32,14 +42,23 @@ const translations = {
     explore: "استكشاف المنشورات",
     footerNote: "جميع الحقوق محفوظة.",
     Abstract:"خلاصة",
-    footerOwner: "طروس للإعلام - تقنية المعلومات",  // ✅ updated Arabic
-        roles: "مؤرخ • مؤلف • أكاديمي",
-
+    footerOwner: "طروس للإعلام - تقنية المعلومات",
+    roles: "مؤرخ • مؤلف • أكاديمي",
     tagline: "أبحاث تربط ماضي الخليج بحاضره — تاريخ يستنير به المجتمع وصانع القرار.",
-    empty: (k) => `لا توجد ${k} بعد.`
+    empty: (k) => `لا توجد ${k} بعد.`,
+
+    // About section labels
+    a_quals: "المؤهلات العلمية",
+    a_positions: "المناصب الأكاديمية والإدارية",
+    a_volunteer: "المناصب التطوعية",
+    a_awards: "الجوائز العلمية",
+    a_publications: "المؤلفات المنشورة (مختارة)",
+    a_books: "كتب",
+    a_articles: "أبحاث",
+    a_activity: "الأنشطة البحثية والمجتمعية",
+    a_memberships: "عضويات مختارة",
   }
 };
-
 
 /* ---------- utils ---------- */
 function esc(s){ return String(s||'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
@@ -47,6 +66,7 @@ function setText(id, val){ const el = document.getElementById(id); if (el) el.te
 function setHTML(id, html){ const el = document.getElementById(id); if (el) el.innerHTML = html ?? ''; }
 function $(sel, root=document){ return root.querySelector(sel); }
 function $all(sel, root=document){ return Array.from(root.querySelectorAll(sel)); }
+let CURRENT_LANG = 'en';
 
 /* ---------- icons (inline SVGs) ---------- */
 function svgInstagram(){ return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.8a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4zm0 2a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4ZM18 6.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>`;}
@@ -63,6 +83,126 @@ function sPill(cls, href, svg, label){
             ${svg}<span>${safeLabel}</span>
           </a>`;
 }
+
+/* ---------- About content (i18n) ---------- */
+const aboutContent = {
+  ar: {
+    name: "أ.د. عبدالله محمد الهاجري",
+    role: "أستاذ التاريخ الحديث والمعاصر – جامعة الكويت",
+    quals: [
+      "دكتوراه في التاريخ الحديث والمعاصر – جامعة دورهام (المملكة المتحدة)<br>أطروحة: المواطنة والمشاركة السياسية في دولة الكويت: دراسة حالة المجلس الوطني",
+      "ماجستير في الدراسات الإسلامية والشرق أوسطية – جامعة واشنطن في سانت لويس (الولايات المتحدة)",
+      "بكالوريوس في التاريخ (تخصص رئيسي) + دراسات إسلامية وقانونية (تخصص فرعي) – جامعة الكويت"
+    ],
+    positions: [
+      "أستاذ التاريخ الحديث والمعاصر – قسم التاريخ – جامعة الكويت",
+      "أستاذ زائر – جامعة تايوان الوطنية",
+      "أستاذ زائر – جامعة تشنغشي الوطنية – قسم الدبلوماسية",
+      "عميد (بالإنابة) – القبول والتسجيل – جامعة الكويت",
+      "عميد (بالإنابة) – كلية الآداب – جامعة الكويت",
+      "عميد مساعد للشؤون الأكاديمية والأبحاث – كلية الآداب",
+      "مدير مركز اللغات – كلية الآداب",
+      "رئيس قسم التاريخ – كلية الآداب",
+      "محاضر – معهد سعود الناصر الصباح الدبلوماسي"
+    ],
+    volunteer: [
+      "عضو هيئة البلدان – موسوعة أرابيكا (قطر) – ممثل الكويت",
+      "أمين سر – الجمعية التاريخية الكويتية",
+      "أمين سر – جمعية المواطنة والتنمية",
+      "أمين عام – الأرشيف التاريخي – جامعة الكويت"
+    ],
+    awards: [
+      "جائزة تايوان للزمالة – وزارة الخارجية – تايوان",
+      "جائزة الدولة التشجيعية في التاريخ والآثار – الكويت",
+      "جائزة الإنتاج العلمي – مؤسسة الكويت للتقدم العلمي",
+      "درع شوامخ المؤرخين العرب – اتحاد المؤرخين العرب – مصر"
+    ],
+    publications: {
+      books: [
+        "تاريخ الكويت: الإمارة والدولة (دار القبس – جائزة الدولة التشجيعية)",
+        "تاريخ الكويت والتربية الوطنية (وزارة التربية – بالمشاركة)",
+        "مدخل إلى تاريخ الكويت الحديث والمعاصر (مركز القرين – بالمشاركة)"
+      ],
+      articles: [
+        "جدلية الحكم الثلاثي على أرض الكويت – مجلة دراسات الخليج",
+        "الأقليات المسيحية في الكويت – مركز دراسات الخليج",
+        "Christian Minorities in Kuwait – Journal of Oriental and African Studies (اليونان)",
+        "The Bedoun: Kuwaitis Without An Identity – Middle Eastern Studies (لندن)"
+      ]
+    },
+    activity: {
+      lectures: "جامعة تشنغشي الوطنية – جامعة تايوان الوطنية",
+      articles: "دستور الكويت – أسوار الكويت",
+      conferences: "مؤتمر تايوان-الهند – مئوية الشيخ زايد"
+    },
+    memberships: [
+      "عضو المجلس الاستشاري – المكتبة الوطنية الكويتية",
+      "عضو هيئة تحرير مجلة عالم الفكر – المجلس الوطني للثقافة",
+      "عضو اتحاد المؤرخين العرب – مصر",
+      "عضو اللجنة الاستشارية العليا للتعيينات والترقيات – جامعة الكويت",
+      "رئيس لجنة تأليف مقرر تاريخ الكويت والتربية الوطنية"
+    ]
+  },
+
+  en: {
+    name: "Prof. Abdullah Mohammad Alhajeri",
+    role: "Professor of Modern and Contemporary History — Kuwait University",
+    quals: [
+      `Ph.D. in Modern & Contemporary History — Durham University (UK)<br>Dissertation: "Citizenship and Political Participation in the State of Kuwait: A Case Study of the National Council"`,
+      "M.A. in Islamic & Middle Eastern Studies — Washington University in St. Louis (USA)",
+      "B.A. in History (major) + Islamic & Legal Studies (minor) — Kuwait University"
+    ],
+    positions: [
+      "Professor of Modern & Contemporary History — Department of History — Kuwait University",
+      "Visiting Professor — National Taiwan University",
+      "Visiting Professor — National Chengchi University — Department of Diplomacy",
+      "Acting Dean — Admission & Registration — Kuwait University",
+      "Acting Dean — College of Arts — Kuwait University",
+      "Assistant Dean for Academic Affairs & Research — College of Arts",
+      "Director, Language Center — College of Arts",
+      "Chair, Department of History — College of Arts",
+      "Lecturer — Saud Al-Nasser Al-Sabah Diplomatic Institute"
+    ],
+    volunteer: [
+      "Country Panel Member — Arabica Encyclopedia (Qatar) — Kuwait representative",
+      "Secretary — Kuwait Historical Society",
+      "Secretary — Citizenship & Development Society",
+      "Secretary-General — Historical Archive — Kuwait University"
+    ],
+    awards: [
+      "Taiwan Fellowship — Ministry of Foreign Affairs — Taiwan",
+      "State Incentive Award in History & Antiquities — Kuwait",
+      "Scientific Production Award — Kuwait Foundation for the Advancement of Sciences",
+      "Shield of Eminent Arab Historians — Union of Arab Historians — Egypt"
+    ],
+    publications: {
+      books: [
+        "History of Kuwait: The Emirate and the State (Al-Qabas Publishing — State Incentive Award)",
+        "History of Kuwait & National Education (Ministry of Education — co-authored)",
+        "Introduction to the Modern & Contemporary History of Kuwait (Al-Qurain Center — co-authored)"
+      ],
+      articles: [
+        "The Dialectic of the Triple Rule over the Land of Kuwait — Journal of Gulf Studies",
+        "Christian Minorities in Kuwait — Gulf Studies Center",
+        "Christian Minorities in Kuwait — Journal of Oriental and African Studies (Greece)",
+        "The Bedoun: Kuwaitis Without an Identity — Middle Eastern Studies (London)"
+      ]
+    },
+    activity: {
+      lectures: "National Chengchi University — National Taiwan University",
+      articles: "Constitution of Kuwait — Walls of Kuwait",
+      conferences: "Taiwan–India Conference — Sheikh Zayed Centennial"
+    },
+    memberships: [
+      "Advisory Council Member — Kuwait National Library",
+      "Editorial Board Member, ‘Alam Al-Fikr (World of Thought) — National Council for Culture",
+      "Member — Union of Arab Historians — Egypt",
+      "Member — Higher Advisory Committee for Appointments & Promotions — Kuwait University",
+      "Chair — Committee for Authoring the Kuwait History & National Education Curriculum"
+    ]
+  }
+};
+
 function setSocials(id, s){
   const el = document.getElementById(id);
   if (!el) return;
@@ -103,7 +243,8 @@ function card(it) {
   const thumb = esc(it.thumbnail || 'assets/placeholder.png');
   const title = esc(it.title || 'Untitled');
   const meta  = [it.authors, it.venue, it.year].filter(Boolean).join(' · ');
-  const abstract = it.abstract ? `<details><summary>Abstract</summary><p>${esc(it.abstract)}</p></details>` : '';
+const labelAbstract = translations[CURRENT_LANG]?.Abstract || 'Abstract';
+const abstract = it.abstract ? `<details><summary>${esc(labelAbstract)}</summary><p>${esc(it.abstract)}</p></details>` : '';
 
   el.innerHTML = `
     <img class="thumb" src="${thumb}" alt="" onerror="this.src='assets/1.jpg'">
@@ -162,6 +303,62 @@ if (note) {
 
   }
 }
+function renderAbout(lang) {
+  const c = aboutContent[lang];
+  if (!c) return;
+
+  const target = document.getElementById('about-content');
+  if (!target) return;
+
+  target.innerHTML = `
+    <div class="about-section">
+      <h3 class="about-subtitle">${esc(c.name)}</h3>
+      <p>${esc(c.role)}</p>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_quals}</h3>
+      <ul>${c.quals.map(q => `<li>${q}</li>`).join('')}</ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_positions}</h3>
+      <ul>${c.positions.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_volunteer}</h3>
+      <ul>${c.volunteer.map(v => `<li>${esc(v)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_awards}</h3>
+      <ul>${c.awards.map(a => `<li>${esc(a)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_publications}</h3>
+      <strong>${translations[lang].a_books}:</strong>
+      <ul>${c.publications.books.map(b => `<li>${esc(b)}</li>`).join('')}</ul>
+      <strong>${translations[lang].a_articles}:</strong>
+      <ul>${c.publications.articles.map(a => `<li>${esc(a)}</li>`).join('')}</ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_activity}</h3>
+      <ul>
+        <li><strong>${lang==='ar'?'محاضرات':'Lectures'}:</strong> ${esc(c.activity.lectures)}</li>
+        <li><strong>${lang==='ar'?'مقالات':'Articles'}:</strong> ${esc(c.activity.articles)}</li>
+        <li><strong>${lang==='ar'?'مؤتمرات':'Conferences'}:</strong> ${esc(c.activity.conferences)}</li>
+      </ul>
+    </div>
+
+    <div class="about-section">
+      <h3 class="about-subtitle">${translations[lang].a_memberships}</h3>
+      <ul>${c.memberships.map(m => `<li>${esc(m)}</li>`).join('')}</ul>
+    </div>
+  `;
+}
 
 /* ---------- render profile + panels in selected lang ---------- */
 function renderContent(lang){
@@ -213,13 +410,14 @@ function setLang(lang){
     arBtn?.classList.remove('active'); enBtn?.classList.add('active');
   }
 
-  // Save preference
+  CURRENT_LANG = lang;
   try { localStorage.setItem('lang', lang); } catch(_) {}
 
-  // Update UI strings + content
   applyStaticStrings(lang);
-  renderContent(lang);
+  renderAbout(lang);     // <<< important
+  renderContent(lang);   // panels/profile (if APP_DATA loaded)
 }
+
 window.setLang = setLang; // for buttons
 
 /* ---------- tabs & routing ---------- */

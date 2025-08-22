@@ -981,7 +981,7 @@ html[dir="rtl"] .tab-panel .thumb {
 }
 /* ✅ Base = phone first */
 .contact-grid {
-  --icon-size: 40px;   /* default small for phones */
+  --icon-size: 60px;   /* default small for phones */
   --icon-gap: 16px;
 
   display: flex;
@@ -1019,8 +1019,8 @@ html[dir="rtl"] .tab-panel .thumb {
 /* 🖥️ Scale up on tablets/laptops */
 @media (min-width: 700px) {
   .contact-grid {
-    --icon-size: 70px;
-    --icon-gap: 60px;
+    --icon-size: 100px;
+    --icon-gap: 170px;
   }
 }
 
@@ -1136,3 +1136,53 @@ html[dir="rtl"] .contact-grid {
 
 /* ========= RTL friendly (uses logical props) ========= */
 /* no special rules needed; the vertical divider is centered */
+/* ==============================
+   Splash stripe: lock layout LTR
+   and scale up in Arabic
+   ============================== */
+
+/* Base sizes (English/LTR) */
+:root {
+  --logo-size: clamp(72px, 12vw, 120px);
+  --logo-offset: clamp(8px, 2vw, 24px);
+  --stripe-height: clamp(90px, 7vw, 64px);
+}
+
+/* Always keep the splash layout LTR (even on RTL pages) */
+.strip-splash .splash-row { 
+  direction: ltr;                /* prevent auto mirroring */
+  display: flex;
+  flex-direction: row !important;/* override any global .rtl row-reverse */
+}
+
+/* The stripe should always start from the left of the logo */
+.strip-splash .splash-row::after {
+  left: calc(var(--logo-offset) + (var(--logo-size) / 2));
+  right: 0;
+}
+
+/* Logo is always on the left side */
+.strip-splash .logo-splash {
+  margin-left: var(--logo-offset);
+  margin-right: 0;
+}
+
+/* In Arabic: only scale sizes up, keep layout LTR */
+html[dir="rtl"] .strip-splash {
+  --logo-size: clamp(200px, 20vw, 200px);  /* bigger logo in Arabic */
+  --stripe-height: clamp(90px, 8vw, 72px);/* taller stripe in Arabic */
+}
+html[dir="ltr"] .strip-splash {
+  --logo-size: clamp(200px, 20vw, 200px);  /* bigger logo in Arabic */
+  --stripe-height: clamp(90px, 8vw, 72px);/* taller stripe in Arabic */
+}
+
+/* Arabic text should read right-aligned, but layout stays LTR */
+html[dir="rtl"] .strip-splash .title-side {
+  text-align: right;
+}
+
+/* Optional: slightly larger title in Arabic to match the bigger logo */
+html[dir="rtl"] .strip-splash .mh-title {
+  font-size: clamp(18px, 4vw, 36px);
+}
